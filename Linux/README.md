@@ -1,0 +1,15 @@
+## Linux Exercise & Lab Guide
+
+1. [Lab 1.1: Puppet product overview](directory)
+1. [Lab 2.1: Install Puppet Bolt]()
+1. [Lab 2.2: Running Bolt Commands]()
+1. [Lab 5.1: Puppet Agent deployment]()
+1. [Lab 6.1: Puppet resources]()
+1. [Lab 6.2: Using and extending Facter]()
+1. [Lab 7.1: Puppet Forge]()
+1. [Lab 8.1: Create a wrapper module]()
+1. [Lab 9.1: Test module syntax and style]()
+1. [Lab 10.1: Create roles and profiles]()
+1. [Lab 12.1: Expand initial roles and profiles]()
+1. [Lab 13.1: Class params]()
+1. [Lab 14.1: Deploy an application]()
