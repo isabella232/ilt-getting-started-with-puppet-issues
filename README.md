@@ -10,7 +10,7 @@ This repository contains the step by step instructions for the Getting Started w
 
 1. [Windows]()
 
-## Linux Labs
+## Linux Exercise & Lab Guide
 
 1. [Linux]()
 
