@@ -102,23 +102,23 @@ Next, move the provided external fact script into place:
 
 1. Download `datacenter.sh` to the Linux machine by visiting the downloads page with your browser, right-clicking the script, and selecting **Copy Link address**. Then run:
 
-```$ curl -o datacenter.sh '<pasted location>'```
+  ```$ curl -o datacenter.sh '<pasted location>'```
 
 1. Create the Facter location:
 
-```$ sudo mkdir -p /etc/puppetlabs/facter/facts.d```
+  ```$ sudo mkdir -p /etc/puppetlabs/facter/facts.d```
         
 1. Move the script into place where Facter can execute it:
 
-```$ sudo mv datacenter.sh /etc/puppetlabs/facter/facts.d```
+  ```$ sudo mv datacenter.sh /etc/puppetlabs/facter/facts.d```
         
 1. Make the script executable:
 
-```$ sudo chmod +x /etc/puppetlabs/facter/facts.d/datacenter.sh```
+  ```$ sudo chmod +x /etc/puppetlabs/facter/facts.d/datacenter.sh```
         
 1. View the shell script, which echoes a key/value pair and exits:
 
-```vi /etc/puppetlabs/facter/facts.d/datacenter.sh```
+  ```vi /etc/puppetlabs/facter/facts.d/datacenter.sh```
 
 
 Finally, verify that the fact has been installed and is accessible by Facter. Notice the new output.
