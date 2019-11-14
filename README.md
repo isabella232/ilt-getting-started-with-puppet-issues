@@ -8,11 +8,11 @@ This repository contains the step by step instructions for the Getting Started w
 
 ## Windows Exercise & Lab Guide
 
-1. [Windows]()
+1. [Windows](Windows)
 
 ## Linux Exercise & Lab Guide
 
-1. [Linux]()
+1. [Linux](Linux)
 
 ### Puppet Education
 ### http://learn.puppet.com
