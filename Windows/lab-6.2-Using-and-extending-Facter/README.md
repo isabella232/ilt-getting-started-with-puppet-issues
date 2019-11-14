@@ -107,7 +107,7 @@ Next, move the provided external fact script into place:
 Finally, verify that the fact has been installed and is accessible by Facter. Notice the new output.
 
 ```
-PS C:\> facter datacenter
+PS C:\Users\Administrator> facter datacenter
 pdx
 ```
 
