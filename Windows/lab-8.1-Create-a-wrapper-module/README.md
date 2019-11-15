@@ -62,7 +62,7 @@ In the Visual Studio Code application add resources to the `time` class.
     * Both of these two Forge modules’ main classes have a parameter `servers`. Use a variable named `$servers` to pass the array `['time.google.com']` to both classes.
     * Create a case statement that uses the `$facts['kernel']` fact to apply the `winntp` class to Windows and apply the `ntp` class as the default selection.
 
-        ```
+        ```ruby
         class time {  
           $servers = ['time.google.com']
             

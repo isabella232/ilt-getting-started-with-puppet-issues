@@ -55,7 +55,7 @@ Open the Visual Studio Code application to add resources to the `time` class.
         
 1. Replace the file’s content with the code below. To do this, press `i` to enter insert mode and copy the following content into the file:
 
-    ```
+    ```ruby
     class time {
       $servers = ['time.google.com']
     
