@@ -15,3 +15,5 @@ In this instructor-guided lab you will get an overview of Puppet Enterprise.
 # Discussion questions
 
 * Why is RBAC important in Puppet Enterprise?
+
+[Next Lab](../lab-2.1-Install-Puppet-Bolt)

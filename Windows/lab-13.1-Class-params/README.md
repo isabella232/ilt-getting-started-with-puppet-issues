@@ -89,3 +89,5 @@ For this step, you will set the values of the time servers in the Puppet Enterpr
 
 1. What is the advantage of using parameters to configure services on your nodes, instead of hard-coded strings?
 1. Are there any disadvantages to using parameters?
+
+[Next Lab](../lab-14.1-Deploy-an-application)

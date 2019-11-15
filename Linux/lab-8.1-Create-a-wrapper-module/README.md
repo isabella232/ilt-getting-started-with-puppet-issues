@@ -158,3 +158,5 @@ Optionally, add the time module to the platform you did not use for the earlier 
 
 1. Is using PDK required when you create a new module? If not, what advantages do you get from using PDK?
 1. What problems do you solve by using a version control system like Git?
+
+[Next Lab](../lab-9.1-Test-module-syntax-and-style)

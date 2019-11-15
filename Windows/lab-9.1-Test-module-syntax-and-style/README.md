@@ -72,3 +72,5 @@ Using the output and the syntax highlighting, find all errors in your code and r
 # Discussion questions
 
 1. If you had not caught the syntax errors with this tool, when and how do you think those errors might cause problems later?
+
+[Next Lab](../lab-10.1-Create-roles-and-profiles)

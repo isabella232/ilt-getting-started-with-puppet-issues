@@ -74,3 +74,5 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
 * What are some of the benefits to new users of using a graphical development environment?
 * You installed the agent non-interactively using a single command. How might this be useful in production environments?
+
+[Next Lab](../lab-6.1-Puppet-resources)

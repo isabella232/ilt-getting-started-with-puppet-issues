@@ -105,3 +105,5 @@ service { 'W32Time':
 * When `puppet resource` describes the state of a resource, it does so by displaying valid Puppet code. How might this be useful?
 * What non-Puppet tools could `puppet resource` replace in your workflow?
 * Do you think `puppet resource` commands need to be modified to work on different Puppet-supported operating systems?
+
+[Next Lab](../lab-6.2-Using-and-extending-Facter)

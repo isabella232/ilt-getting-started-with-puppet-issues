@@ -130,3 +130,5 @@ Ran on 1 node in 2.00 seconds
 * How might you use Bolt for simple ad hoc administration tasks?
 * What could you do if you want to run against a large group of hosts instead of a single target?
 * How might being able to run existing scripts help you enable other teams?
+
+[Next Lab](../lab-5.1-Puppet-Agent-deployment)

@@ -64,3 +64,5 @@ or simply:
 ```PS C:\Users\Administrator> bolt```
 
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
+
+[Next Lab](../lab-2.2-Running-Bolt-Commands)
