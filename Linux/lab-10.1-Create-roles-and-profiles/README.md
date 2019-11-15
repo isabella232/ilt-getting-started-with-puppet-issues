@@ -7,9 +7,9 @@ In this lab you will learn how to:
 * Add the time profile to the base profile.
 * Create a bastion role and add the base profile to it.
 
-**_Whenever you see _** **classXXXX,** **_ it refers to your class ID, such as_** **class1809.**
+**_Whenever you see_** **classXXXX,** **_ it refers to your class ID, such as_** **class1809.**
 
-**_Whenever you see _** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
+**_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
 
 # Setup
 
