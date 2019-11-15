@@ -1,3 +1,5 @@
+# Lab 2.2: Running commands
+
 In this lab you will learn how to:
 
 * Use Bolt to run simple commands on a target machine.
