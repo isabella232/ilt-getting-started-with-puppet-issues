@@ -147,7 +147,7 @@ Since you want security on all workstations, it makes sense to add the `security
 1. Save `security_baseline.pp`
 1. Test the new profile:
 
-    ````
+    ```
     $ cd control-repo/site
     
     # This is the smoke test.
