@@ -61,10 +61,10 @@ The labs completed thus far have primarily been focused on operating system conf
     1. Sets up logging.
     1. Creates a service definition and starts it.
 1. Commit and push your code updates:
-    1. In Visual Studio Code, click the Source Control (fork) icon on the left.
-    1. Select **SOURCE CONTROL: GIT** (and click **yes** if prompted).
-    1. Type in your commit message and press Enter.
-    1. Click the ellipsis to the right of **SOURCE CONTROL: GIT** and click **Push**.
+    1. cd ~/control-repo
+    1. git add .
+    1. git commit -m 'enter a commit message'
+    1. git push origin studentN
 
 ### Update classification
 
