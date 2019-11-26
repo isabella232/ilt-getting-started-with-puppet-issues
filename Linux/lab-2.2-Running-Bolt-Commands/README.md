@@ -130,6 +130,10 @@ Ran on 1 node in 6.08 seconds
 * What could you do if you want to run against a large group of hosts instead of a single target?
 * How might being able to run existing scripts help you enable other teams?
 
-[Windows Lab](../../Windows/lab-2.2-Running-Bolt-Commands)
+Next Step
+======
 
-[Next Lab](../lab-5.1-Puppet-Agent-deployment)     [Previous Lab](../lab-2.1-Install-Puppet-Bolt)
+[Windows Lab 2.2 Running Bolt Commands](../../Windows/lab-2.2-Running-Bolt-Commands)
+---
+
+|  [Next Lab](../lab-5.1-Puppet-Agent-deployment)  |  [Previous Lab](../lab-2.1-Install-Puppet-Bolt)  |

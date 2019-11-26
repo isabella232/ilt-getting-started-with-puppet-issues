@@ -72,6 +72,10 @@ Now that your agent has been installed, you have to sign the certificates so tha
 * What are some of the benefits to new users of using a graphical development environment?
 * You installed the agent non-interactively using a single command. How might this be useful in production environments?
 
-[Windows Lab](../../Linux/lab-5.1-Puppet-Agent-deployment)
+Next Step
+======
 
-[Next Lab](../lab-6.1-Puppet-resources)     [Previous Lab](../lab-2.2-Running-Bolt-Commands)
+[Linux Lab 5.1 Puppet Agent deployment](../../Linux/lab-5.1-Puppet-Agent-deployment)
+---
+
+|  [Next Lab](../lab-6.1-Puppet-resources)  |  [Previous Lab](../lab-2.2-Running-Bolt-Commands)  |

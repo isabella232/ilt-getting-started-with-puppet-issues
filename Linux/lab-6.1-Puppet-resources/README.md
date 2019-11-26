@@ -111,4 +111,4 @@ service { 'ntpd':
 * What non-Puppet tools could `puppet resource` replace in your workflow?
 * Do you think `puppet resource` commands need to be modified to work on different Puppet-supported operating systems?
 
-[Next Lab](../lab-6.2-Using-and-extending-Facter)     [Previous Lab](../lab-5.1-Puppet-Agent-deployment)
+|  [Next Lab](../lab-6.2-Using-and-extending-Facter)  |  [Previous Lab](../lab-5.1-Puppet-Agent-deployment)  |

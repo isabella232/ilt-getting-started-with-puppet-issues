@@ -65,6 +65,10 @@ or simply:
 
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
 
-Windows Lab](../../Linux/lab-2.1-Install-Puppet-Bolt)
+Next Step
+======
 
-[Next Lab](../lab-2.2-Running-Bolt-Commands)     [Previous Lab](../lab-1.1-Puppet-product-overview)
+[Linux Lab 2.1 Install Puppet Bolt](../../Linux/lab-2.1-Install-Puppet-Bolt)
+---
+
+|  [Next Lab](../lab-2.2-Running-Bolt-Commands)  |  [Previous Lab](../lab-1.1-Puppet-product-overview)  |
