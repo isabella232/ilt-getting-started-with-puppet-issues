@@ -47,8 +47,6 @@ pdk (INFO): Creating '/home/centos/time/spec/classes/time_spec.rb' from template
 
 ### Add classes to your wrapper class
 
-Open the Visual Studio Code application to add resources to the `time` class.
-
 1. Open the `init.pp` file using the vi editor:
  
     ```$ vi manifests/init.pp```

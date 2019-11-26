@@ -10,13 +10,8 @@ In this lab you will learn how to:
 
 ###  Validate your module's syntax and style
 
-1. Open the Visual Studio Code editor.
-1. Choose **File > Open File**.
-1. Select the `time` module directory that you created previously.
-1. Change directories into `manifests`.
-1. Edit the `init.pp` file you created previously.
-1. Select the ellipsis in the upper right corner of the editor pane.
-1. Choose **PDK Validate** from the drop down menu. 
+1. Validate the `init.pp` file you created previously.
+    ```$ pdk validate```
 
 The output should be similar to this:
 
@@ -40,10 +35,9 @@ If there were no errors in your syntax, proceed with this step to simulate one. 
 
 1. Edit the `init.pp` file to introduce a syntax error:
     1. Remove `$` from the `$servers` variable.
-    1. Click **File > Save**.
+    1. Save the file by pressing `Esc` and typing `:wq` and then `Enter`. 
 1. Re-run the PDK Validate tool:
-    1. Select the ellipsis in the upper right hand corner of the editor pane.
-    1. Select **PDK Validate** from the drop down menu. 
+    ```$ pdk validate```
     
 The output should be similar to this:
 

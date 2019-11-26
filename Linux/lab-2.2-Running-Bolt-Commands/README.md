@@ -5,10 +5,6 @@ In this lab you will learn how to:
 * Use Bolt to run simple commands on a target machine.
 * Use Bolt to run existing scripts, written in any language, on a target machine.
 
-# Setup
-
-You will need two machines to run Bolt on. These should be the two machines you installed Bolt on in the previous lab.
-
 **_For the remainder of this lab, you will use instructions for both [Windows](../../Windows/lab-2.2-Running-Bolt-Commands) and Linux. Follow both sets of instructions, so you get experience running Bolt on both platforms._**
 
 # Steps

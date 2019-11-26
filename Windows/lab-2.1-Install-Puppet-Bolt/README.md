@@ -5,13 +5,6 @@ In this lab you will learn how to:
 * Install the open source Bolt utility on Windows machines.
 * Execute a simple command to validate that Bolt is working.
 
-# Setup
-
-You will need three machines:
-
-* Two classroom-provided machines (one Windows, one Linux) to install Bolt onto. These are the **target machines**.
-* A Windows or Linux machine that you will use to connect to the target machines. This is the **host machine**.
-
 # Steps
 
 ### Installing Bolt onto a **Windows** target machine
@@ -36,9 +29,9 @@ Connect with the following information:
 
 On the target machine, start a PowerShell session and run:
 
-```PS C:\Users\Administrator> choco install puppet-bolt```
-
-When prompted by the browser, click **Run**. Follow the installation wizard; no customization is required. Just **Accept the license**, click **Next** through the option windows, click **Install**, and finally **Finish**.
+```
+PS C:\Users\Administrator> choco install puppet-bolt
+```
 
 #### Validate the installation
 

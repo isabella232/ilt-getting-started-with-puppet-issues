@@ -5,13 +5,6 @@ In this lab you will learn how to:
 * Install the open source Bolt utility on Linux machines.
 * Execute a simple command to validate that Bolt is working.
 
-# Setup
-
-You will need three machines:
-
-* Two classroom-provided machines (one Windows, one Linux) to install Bolt onto. These are the **target machines**.
-* A Windows or Linux machine that you will use to connect to the target machines. This is the **host machine**.
-
 # Steps
 
 ### Installing Bolt onto a **Linux** target machine
@@ -29,7 +22,9 @@ In this lab you will install Bolt using the built-in package manager of the Linu
 1. On your Windows student machine, open a PowerShell window
 1. Launch PuTTY:
 
-   ```PS C:\Users\Administrator> putty```
+   ```
+   PS C:\Users\Administrator> putty
+   ```
 
 1. In the **Host Name** field, copy and paste the Linux target machine’s hostname from the Welcome page.
 1. In the left-hand menu, expand **SSH** and click **Auth**.

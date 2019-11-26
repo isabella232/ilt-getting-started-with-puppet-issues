@@ -11,10 +11,6 @@ In this lab you will learn how to:
 
 **_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
 
-# Setup
-
-To complete this lab, you will need a Windows host machine using Visual Studio Code.
-
 # Steps
 
 ### Clone the control repository

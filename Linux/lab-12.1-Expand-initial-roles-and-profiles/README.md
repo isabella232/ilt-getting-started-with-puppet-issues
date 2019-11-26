@@ -12,8 +12,6 @@ In this lab you will learn how to:
 
 In this lab, you will apply Puppet code locally to make changes, commit the code to GitLab and then push the changes to your workstations via the Puppet master.
 
-To complete this lab you will need a Linux host machine with a shell window.
-
 You will need additional modules for future labs, and now that you are familiar with the `puppet module install` command, you can make sure extra modules are installed. To complete the module installation process, run this command:
 
 ```
@@ -32,7 +30,7 @@ Starter code to add to create two new security profiles (one for Windows, one fo
 
 This Puppet code enables the Windows Firewall and opens three ports: ICMP (ping), WinRM (remote scripting) and RDP (remote console).
 
-In Visual Studio Code, validate that the content of the file `site/profile/manifests/baseline/windows/firewall.pp` is as follows:
+Validate that the content of the file `site/profile/manifests/baseline/windows/firewall.pp` is as follows:
 
 ```ruby
 class profile::baseline::windows::firewall {
@@ -135,7 +133,7 @@ Since you want security on all workstations, it makes sense to add the `security
 ### Add a smoke test (Optional)
 
 1. Add the example file to allow local `puppet apply` testing:
-    1. In Visual Studio Code, right click **site**. Click **profile**. Click **New Folder** and name it `examples`
+    1. Create the `examples` directory in `~/control-repo/site/profile/`
     1. Inside the `examples` folder, add a file called `security_baseline.pp`
 
 1. Add this to the `security_baseline.pp` file:

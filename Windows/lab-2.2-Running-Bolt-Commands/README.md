@@ -7,9 +7,7 @@ In this lab you will learn how to:
 
 ## Setup
 
-You will need two machines to run Bolt on. These should be the two machines you installed Bolt on in the previous lab.
-
-##### **_For the remainder of this lab, you will use the instructions for both Windows and [Linux](../../Linux/lab-2.2-Running-Bolt-Commands). Follow both sets of instructions, so you get experience running Bolt on both platforms._**
+**_For the remainder of this lab, you will use the instructions for both Windows and [Linux](../../Linux/lab-2.2-Running-Bolt-Commands). Follow both sets of instructions, so you get experience running Bolt on both platforms._**
 
 ## Steps
 

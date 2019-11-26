@@ -11,10 +11,6 @@ In this lab you will learn how to:
 
 **_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
 
-# Setup
-
-To complete this lab, you will need a Linux host machine using a Linux shell.
-
 # Steps
 
 ### Clone the control repository
@@ -67,7 +63,7 @@ Now when you apply the `base` profile to all workstations, they will have NTP co
 
 ### Add the time module to the control repo branch
 
-1. In Visual Studio Code or the vi editor, open the file named `Puppetfile` in the control repository.
+1. Edit the file named `Puppetfile` in the `~/control-repo`.
 1. In `Puppetfile`, add a module (`mod`) entry for the Git remote you pushed your module to previously. Remember to set the `branch` key to your correct student number.
 
     ```ruby
@@ -82,16 +78,8 @@ Now that you have a `base` profile, increase your level of abstraction by placin
 
 For this example, you will ensure all bastion hosts have the `base` profile applied. It applies the class `ntp` or `winntp` to Linux or Windows respectively.
 
-1. To add the new role in Visual Studio Code, navigate from **site** to **role** to **manifests**.
-
-    ```
-    site
-    |_role
-      |_manifests
-    ```
-
+1. Navigate to the `~/control-repo/site/role/manifests` directory.
 1. Create a new file called `bastion.pp` in the `manifests` directory.
-
 1. To configure the `bastion` role, enter the following code into the empty `bastion.pp` file:
 
     ```ruby
@@ -114,8 +102,8 @@ In this lab, you will test it with `puppet apply`. In a future lab, you will see
 
 Create an `examples` directory where you can place files to test your profile:
 
-1. In Visual Studio Code, right-click **site** and then **role** and select **New Folder** and name it `examples`
-1. Inside the `examples` folder, add a file called `bastion.pp`. Your file system structure should look like this:
+1. Navigate to `~/control-repo/site/role` and make the `examples` directory.
+1. Inside the `examples` directory, add a file called `bastion.pp`. Your file system structure should look like this:
 
     ```
     site
@@ -131,8 +119,7 @@ Create an `examples` directory where you can place files to test your profile:
     ```
 
 1. Save `bastion.pp`.
-
-1. Now you can smoke test this class and then apply it locally. At the terminal window that opens, change directory into your `control-repo\site\role` directory. First run a smoke test (noop) and then `puppet apply` the role, using these platform-specific instructions:
+1. Now you can smoke test this class, change directory to your `control-repo\site\role` directory. First run a smoke test (noop) and then `puppet apply` the role:
 
 #### Smoke test your code
 
@@ -142,7 +129,7 @@ Create an `examples` directory where you can place files to test your profile:
 
 1. Run a smoke test:
 
-    ```$ sudo puppet apply examples/bastion.pp --noop --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos```
+    ```$ sudo puppet apply examples/bastion.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos  --noop```
 
 1. Apply the role for real:
 

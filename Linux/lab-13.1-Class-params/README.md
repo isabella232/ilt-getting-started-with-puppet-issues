@@ -14,17 +14,11 @@ In this lesson, you will learn how to customize your shared profiles so they are
 
 **_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
 
-# Setup
-
-To complete this lab, you will need either a Windows host machine using Visual Studio Code, or a Linux shell.
-
 # Steps
 
 ### Update the time module
 
 In this step you will make a slight change to the existing code in your `time` profile.
-
-Connect to your Windows student machine and open Visual Studio Code with your cloned time repo. Or if you are on Linux, open the appropriate file with an editor.
 
 Change the code from this:
 
