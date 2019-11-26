@@ -68,7 +68,7 @@ Note that your version might be slightly different.
 
 ```
 $ bolt --version
-1.17.0
+1.39.0
 ```
 
 #### Run Bolt
