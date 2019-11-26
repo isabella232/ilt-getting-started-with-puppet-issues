@@ -132,4 +132,4 @@ Next Step
 [Windows Lab 2.2 Running Bolt Commands](../../Windows/lab-2.2-Running-Bolt-Commands)
 ---
 
-|  [Next Lab](../lab-5.1-Puppet-Agent-deployment)  |  [Previous Lab](../lab-2.1-Install-Puppet-Bolt)  |
+|  [Previous Lab](../lab-2.1-Install-Puppet-Bolt)  |  [Next Lab](../lab-5.1-Puppet-Agent-deployment)  |

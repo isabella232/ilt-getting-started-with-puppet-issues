@@ -78,4 +78,4 @@ Next Step
 [Linux Lab 5.1 Puppet Agent deployment](../../Linux/lab-5.1-Puppet-Agent-deployment)
 ---
 
-|  [Next Lab](../lab-6.1-Puppet-resources)  |  [Previous Lab](../lab-2.2-Running-Bolt-Commands)  |
+|  [Previous Lab](../lab-2.2-Running-Bolt-Commands)  |  [Next Lab](../lab-6.1-Puppet-resources)  |

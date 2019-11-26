@@ -105,4 +105,4 @@ Once the run completes, verify the time on the system and ensure that it is accu
 1. What modules might you find on the Forge, that could be useful at your company?
 1. Do you think the operations you performed on the Puppet Enterprise console could have been performed with command line tools instead?
 
-|  [Next Lab](../lab-8.1-Create-a-wrapper-module)  |  [Previous Lab](../lab-6.2-Using-and-extending-Facter)  |
+|  [Previous Lab](../lab-6.2-Using-and-extending-Facter)  |  [Next Lab](../lab-8.1-Create-a-wrapper-module)  |
