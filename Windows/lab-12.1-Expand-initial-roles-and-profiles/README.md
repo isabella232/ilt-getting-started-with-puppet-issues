@@ -220,4 +220,4 @@ This will take a few minutes as Puppet runs and collects data on both nodes. You
 1. Why might building up a hierarchy of profiles — instead of just creating a single profile — be useful?
 1. Can you think of a hierarchy of profiles that might be useful in your work environment?
 
-[Next Lab](../lab-13.1-Class-params)
+[Next Lab](../lab-13.1-Class-params)     [Previous Lab](../lab-10.1-Create-roles-and-profiles)

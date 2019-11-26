@@ -98,3 +98,5 @@ Now run your code and see the application get deployed.
 
 1. What do you think happens if a managed node is missing some dependency when Puppet tries to apply a role or profile (for example, if the Java environment is not installed)?
 1. Can you summarize the difference between a role and a profile?
+
+[Previous Lab](../lab-13.1-Class-params)

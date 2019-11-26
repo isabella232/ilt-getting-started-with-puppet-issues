@@ -133,4 +133,4 @@ pdx
 * Are there any unusual aspects of your company's infrastructure that you might want to capture with external fact scripts?
 * Which is easier: remembering the single syntax used by Facter, or the many syntaxes used by different command line tools for collecting the same facts?
 
-[Next Lab](../lab-7.1-Puppet-Forge)
+[Next Lab](../lab-7.1-Puppet-Forge)     [Previous Lab](../lab-6.1-Puppet-resources)

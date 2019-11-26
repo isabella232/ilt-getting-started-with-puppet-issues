@@ -173,4 +173,4 @@ In the next lab, you will expand on the base profile.
 1. How do roles and profiles differ?
 1. At your job, what are some roles that could be useful?
 
-[Next Lab](../lab-12.1-Expand-initial-roles-and-profiles)
+[Next Lab](../lab-12.1-Expand-initial-roles-and-profiles)     [Previous Lab](../lab-9.1-Test-module-syntax-and-style)
