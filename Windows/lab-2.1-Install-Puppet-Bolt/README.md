@@ -29,9 +29,7 @@ Connect with the following information:
 
 On the target machine, start a PowerShell session and run:
 
-```
-PS C:\Users\Administrator> choco install puppet-bolt
-```
+```PS C:\Users\Administrator> choco install puppet-bolt```
 
 #### Validate the installation
 

@@ -18,25 +18,15 @@ Navigate to the Puppet Forge at https://forge.puppet.com and observe the number 
 
 The Forge web site has been constructed to help you quickly find what you need. Notice that you are prompted for something that you want to automate, what type of module (supported or otherwise), what platform support you need, and whether you want a module with tasks included.
 
-
 ### Search for a module
 
 You are using a Linux agent node, enter `ntp` in the search box and click **Search**. 
-
-Notice that a large number of module listings are returned. The Forge web site includes a handy key along the right side of the results page that shows which modules are supported, have tasks, or have other features you might want.
-
-Customize your searches and search results by using the web site’s drop-down menus. For instance, the site allows you to constrain your searches to a specific operating system. Once you receive the search results, you can sort the results in various ways to find the modules that most interest you.
 
 ### Find detailed information about a module
 
 Locate the `puppetlabs/ntp` module in the results from the search you performed above. Click into the result to view a page containing more details about the module.
 
-This page includes a great deal of useful information, including supported operating systems, Puppet Enterprise version compatibility, how to add this module to your Puppet master (via a Puppetfile or the `puppet module install` command), and a complete set of documentation. Spend some time exploring the page and its documentation tab.
-
-On the right side of the module’s detail page is a quality score and community rating. You can use these numbers, along with information about how frequently the module is updated and when the last release occurred, to find a module that meets your needs for stability and reliability.
-
-After using the module, you can contribute by filling in the survey questions presented on the page. The Forge web site is designed with the community in mind, helping Puppet developers find what they need and allowing them to rate the modules that are useful to them so others can find those modules as well.
-
+This page includes a great deal of useful information, including supported operating systems, Puppet version compatibility, how to add this module to your Puppet master (via a Puppetfile or the `puppet module install` command), and a complete set of documentation. Spend some time exploring the page and its documentation tab.
 
 ### Learn about the Puppet `modulepath`
 
@@ -70,7 +60,7 @@ Verify the installation of the module (your output might differ):
 $ sudo puppet module list --tree
 /etc/puppetlabs/code/environments/production/modules
   └─┬puppetlabs-ntp (v7.2.0)
-    └──puppetlabs-stdlib (v4.25.1)
+    └──puppetlabs-stdlib (v5.2.0)
 /etc/puppetlabs/code/modules (no modules installed)
 ```
 

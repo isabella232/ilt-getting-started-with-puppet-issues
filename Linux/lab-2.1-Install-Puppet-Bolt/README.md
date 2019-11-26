@@ -22,9 +22,7 @@ In this lab you will install Bolt using the built-in package manager of the Linu
 1. On your Windows student machine, open a PowerShell window
 1. Launch PuTTY:
 
-   ```
-   PS C:\Users\Administrator> putty
-   ```
+   ```PS C:\Users\Administrator> putty```
 
 1. In the **Host Name** field, copy and paste the Linux target machine’s hostname from the Welcome page.
 1. In the left-hand menu, expand **SSH** and click **Auth**.
