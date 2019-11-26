@@ -81,10 +81,10 @@ or simply:
 
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
 
-Next Steps
+Next Step
 ======
 
-[Windows Lab](../../Windows/lab-2.1-Install-Puppet-Bolt)
+[Windows Lab 2.1 Install Puppet Bolt](../../Windows/lab-2.1-Install-Puppet-Bolt)
 ---
 
-| [Next Lab](../lab-2.2-Running-Bolt-Commands) | [Previous Lab](../lab-1.1-Puppet-product-overview) |
+|  [Next Lab](../lab-2.2-Running-Bolt-Commands)  |  [Previous Lab](../lab-1.1-Puppet-product-overview)  |
