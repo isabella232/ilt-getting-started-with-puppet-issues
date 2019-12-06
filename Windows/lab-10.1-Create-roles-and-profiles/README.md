@@ -23,7 +23,7 @@ In this task, you will clone the control repository to your Windows workstation.
 1. In the box that opens, start typing *git clone* and select **Git: Clone** when it appears.
 1. In the **Repository URL** field, enter *git@gitlab.classroom.puppet.com:puppet/control-repo.git* and press `Enter`.
 1. In the dialog box that opens, click **Select Repository Location**.
-1. You will be prompted in the lower right corner to **Open Repository**. Click the button.
+1. You will be prompted in the lower right corner to **Open Repository**. Click the `Open` button.
 1. Now that you have successfully cloned the repository, switch to your student branch:
   1. Click the branch icon followed by the word **production**, in the lower left corner.
   1. In the **Select a ref to checkout** dialog list, select **origin/studentN** where N is your student ID.

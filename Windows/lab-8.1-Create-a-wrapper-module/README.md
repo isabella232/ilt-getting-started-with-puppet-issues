@@ -98,9 +98,9 @@ $ git config --global user.name "studentN"
 1. Choose **File > Open Folder**
 1. Change directories back up into the main `time` directory and click **Select Folder** to open it.
 1. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
-1. Click the small diamond icon in the upper left of the pane (its tool tip says **Initialize Repository**).
+1. Click the + icon in the upper right of the left pane (its tool tip says **Initialize Repository**).
 1. Click **Initialize Repository** in the resulting dialog.
-1. Click the ellipsis where the small diamond icon was in the upper left of the pane.
+1. Click the ellipsis where the + icon was in the upper right of the pane.
 1. Choose **Stage All Changes**.
 1. Using the ellipsis choose **Commit Staged**.
 1. Enter `Initial Commit` into the commit message dialog and press `Enter`.
