@@ -99,7 +99,7 @@ $ git config --global user.name "studentN"
 1. Change directories back up into the main `time` directory and click **Select Folder** to open it.
 1. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
 1. Click the + icon in the upper right of the left pane (its tool tip says **Initialize Repository**).
-1. Click **Initialize Repository** in the resulting dialog.
+1. Press *Enter* to accept the default or click the `time c:\Users\Administrator\time`.
 1. Click the ellipsis where the + icon was in the upper right of the pane.
 1. Choose **Stage All Changes**.
 1. Using the ellipsis choose **Commit Staged**.
@@ -109,7 +109,7 @@ $ git config --global user.name "studentN"
 
 ### Publish your module
 
-* To share your module with colleagues and Puppet masters, push it to a remote Git server. Running the following command from the base directory of your time module adds the URL to push to using the name `origin`.
+* To share your module with colleagues and Puppet masters, push it to a remote Git server. Running the following command (inside the VSC Terminal) from the base directory of your time module add the URL to push to using the name `origin`.
 
     ```PS C:\Users\Administrator\time> git remote add origin git@gitlab.classroom.puppet.com:puppet/time.git```
 
