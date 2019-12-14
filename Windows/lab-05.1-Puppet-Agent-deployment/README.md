@@ -36,7 +36,7 @@ A basic installation script has been pre-staged in your home directory, at `C:\U
 
 1. Install the agent on your local system by using Bolt to run the script in an Administrator PowerShell.
 
-    ```PS C:\Users\Administrator> bolt script run install_pe_agent.ps1 --targets winrm://localhost --user Administrator --no-ssl --password```
+    ```PS C:\Users\Administrator> bolt script run install_pe_agent.ps1 --targets winrm://localhost --user Administrator --no-ssl --password-prompt```
 
 1. Verify that the agent installed correctly by navigating to the Start button, then to the Puppet application folder. Click **Start Command prompt with Puppet**. In the new window, run this command. If the output displays a version, the installation was successful.
 

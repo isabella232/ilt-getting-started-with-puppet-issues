@@ -19,7 +19,7 @@ You are going to stop the time service on the Windows and Linux machines machine
 
 Use RDP to connect to the Windows machine you will run Bolt on. Once you are connected, open a PowerShell terminal on that machine, and then run this command within the PowerShell terminal:
 
-```PS C:\Users\Administrator> bolt command run 'net stop w32time' --targets winrm://localhost --user Administrator --no-ssl --password```
+```PS C:\Users\Administrator> bolt command run 'net stop w32time' --targets winrm://localhost --user Administrator --no-ssl --password-prompt```
 
 **_You will be prompted for the password._**
 
