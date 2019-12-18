@@ -12,7 +12,7 @@ When you first start using Git, you need to setup your user information. To do t
 
    ```git config --global user.email "[your email address]"```
 
-**_ This needs to be done on a per user, in other words, if you do this a the `centos` user and then sudo to `root`, you would also have to setup the same config for your `root` user._**
+**_This needs to be done on a per user, in other words, if you do this a the `centos` user and then sudo to `root`, you would also have to setup the same config for your `root` user._**
 
 ### Creating repositories
 
