@@ -39,13 +39,9 @@ The other way you can have a repository is to clone it. This is used when the re
 ### Synchronizing changes
 
 Before you make any changes to a local repository, you want to ensure you have the latest version. You might not be the only one working on a specific git repo and as such, you need to ensure you are not working on an outdated set of code. To do this, you would need to sync your local repo to the remote.
-You can use 2 different command either, in class we will use `git pull`
 
    ```git pull```
 
-   or
-
-   ```git fetch```
 
 ### Branches
 
