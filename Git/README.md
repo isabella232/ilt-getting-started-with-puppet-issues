@@ -77,9 +77,9 @@ First, though we need to understand how does Git know what to track in version c
    
    ```git add *```
 
-All of these do the pretty much the same thing, take anything that is in the local directory and add the files to the stage. Side note teh `--all` and `-A` are the same thing. 
+All of these do the pretty much the same thing, take anything that is in the local directory and add the files to the stage. Side note the `--all` and `-A` are the same thing. 
 
-Now that our files are on the stage, we need to commit them to the index and to do that we do a `git commit` and add a message. This message is to let others know the changes we made and why. You can put anything you want here, be as detailed or a vague as you want to be. 
+Now that our files are on the stage, we need to commit them to the index and to do that we do a `git commit` and add a message. This message is to let others know the changes we made and why. You can put anything you want here, be as detailed as possible for your "future self". 
 
    ```git commit -m [message]```
 
