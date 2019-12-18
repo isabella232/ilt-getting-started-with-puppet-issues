@@ -14,5 +14,7 @@ This repository contains the step by step instructions for the Getting Started w
 
 1. [Linux](Linux)
 
+1. [Git Tutorial](Git)
+
 ### Puppet Education
 ### http://learn.puppet.com
