@@ -41,17 +41,17 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
     }
     ```
 
-### Convert the module using the Pupppet Developer Kit
+### Convert the profile module using the Pupppet Developer Kit
 
-1. Change directories to `control-repo`
+1. Change directories to `control-repo/site/profile`
     
-    ```$ cd ~/control-repo```
+    ```$ cd ~/control-repo/site/profile```
 
 1. Run the PDK convert command
 
-    ```$ pdk convert```
+    ```$ pdk convert --add-tests```
 
-1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
+1. Accept `Y` when asked `Do you want to continue and make these changes to your module?
 
 ### Validate and test the syntax
 
@@ -87,6 +87,18 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
       include profile::base
     }
     ```
+
+### Convert the role module using the Pupppet Developer Kit
+
+1. Change directories to `control-repo/site/role`
+    
+    ```$ cd ~/control-repo/site/role```
+
+1. Run the PDK convert command
+
+    ```$ pdk convert --add-tests```
+
+1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
 1. Test the syntax by running:
 

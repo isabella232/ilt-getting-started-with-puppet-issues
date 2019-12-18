@@ -43,12 +43,15 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
   }
 ```
 
-### Convert the module using the Pupppet Developer Kit
+### Convert the profile module using the Pupppet Developer Kit
 
-1. Change directories to `C:\Users\Administrator\control-repo`
+1. Change directories to `C:\Users\Administrator\control-repo\site\profile`
+
+    ```C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site\profile```
+
 1. Run the PDK convert command
 
-    ```C:\Users\Administrator\control-repo> pdk convert```
+    ```C:\Users\Administrator\control-repo\site\profile> pdk convert --add-tests```
 
 1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
@@ -56,7 +59,7 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
 
 1. Test the syntax. From your shell window run:
 
-    ```PS C:\Users\Administrator\control-repo> pdk validate```
+    ```PS C:\Users\Administrator\control-repo\site\profile> pdk validate```
 
 Now when you apply the `base` profile to all workstations, they will have NTP configured by default.
 
@@ -77,13 +80,17 @@ Now that you have a `base` profile, increase your level of abstraction by placin
 
 For this example, you will ensure all bastion hosts have the `base` profile applied. It applies the class `ntp` or `winntp` to Linux or Windows respectively.
 
-1. To add the new role in Visual Studio Code, navigate from **site** to **role** to **manifests**.
+### Convert the role module using the Pupppet Developer Kit
 
-    ```
-    site
-    |_role
-      |_manifests
-    ```
+1. Change directories to `C:\Users\Administrator\control-repo\site\role`
+
+    ```C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site\role```
+
+1. Run the PDK convert command
+
+    ```C:\Users\Administrator\control-repo\site\role> pdk convert --add-tests```
+
+1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
 1. Create a new file called `bastion.pp` in the `manifests` directory.
 
@@ -97,7 +104,7 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 
 1. Test the syntax by running:
 
-    ```PS C:\Users\Administrator\control-repo> pdk validate```
+    ```PS C:\Users\Administrator\control-repo\site\role> pdk validate```
 
 1. If any syntax errors are detected, fix them and re-run the PDK Validate tool.
 
@@ -139,7 +146,7 @@ Create an `examples` directory where you can place files to test your profile:
     PS C:\Users\Administrator> cd c:\Users\Administrator\control-repo\site\role
     
     # This is the smoke test. --noop is a dry-run.
-    PS C:\Users\Administrator> puppet apply examples\bastion.pp --noop --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator'
+    PS C:\Users\Administrator> puppet apply examples\bastion.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator --noop'
     
     # Apply it for real
     PS C:\Users\Administrator> puppet apply examples\bastion.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator'
