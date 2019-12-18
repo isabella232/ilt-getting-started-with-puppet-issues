@@ -57,7 +57,7 @@ To create a new branch you simply run
 
 You can also list all the current branches using
 
-   ```git branch`
+   ```git branch```
 
 Or you can even list all branches including those on the remote using
 
@@ -74,8 +74,11 @@ Now that you have a local repository, now comes the fun part, editing local file
 First, though we need to understand how does Git know what to track in version control. This is where the stage comes into play. The stage, similar to the stage actors use, is where we put our files for Git to know about. Think of it this way, our local files are back stage, never seen by the public, however when we want the public to see them we have to put them out in front of them, hence staging our files. Within Git we use the `git add`
 
    ```git add --all```
+   
    ```git add -A```
+   
    ```git add .```
+   
    ```git add *```
 
 All of these do the pretty much the same thing, take anything that is in the local directory and add the files to the stage. Side note teh `--all` and `-A` are the same thing. 
