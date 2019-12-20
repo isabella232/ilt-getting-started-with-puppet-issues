@@ -93,7 +93,7 @@ The `puppet resource` command may be used to observe the configuration of the NT
 In a PowerShell window, run this command:
 
 ```
-PS C:\> puppet resource service W32Time
+PS C:\Users\Administrator> puppet resource service W32Time
 ```
 
 The output should be similar to this:
