@@ -17,34 +17,34 @@ In a PowerShell window, run these two commands. The output should look similar t
 
 * Get info on all users:
 
-```
-PS C:\Users\Administrator> puppet resource user
-user { 'Administrator':
-  ensure  => 'present',
-  comment => 'Built-in account for administering the computer/domain',
-  groups  => ['BUILTIN\Administrators'],
-  uid     => 'S-1-5-21-545430610-555444065-152929764-500',
-}
-user { 'DefaultAccount':
-  ensure  => 'present',
-  comment => 'A user account managed by the system.',
-  groups  => ['BUILTIN\System Managed Group'],
-  uid     => 'S-1-5-21-545430610-555444065-152929764-503',
-}
-[...]
-```
+   ```
+   PS C:\Users\Administrator> puppet resource user
+   user { 'Administrator':
+     ensure  => 'present',
+     comment => 'Built-in account for administering the computer/domain',
+     groups  => ['BUILTIN\Administrators'],
+     uid     => 'S-1-5-21-545430610-555444065-152929764-500',
+   }
+   user { 'DefaultAccount':
+     ensure  => 'present',
+     comment => 'A user account managed by the system.',
+     groups  => ['BUILTIN\System Managed Group'],
+     uid     => 'S-1-5-21-545430610-555444065-152929764-503',
+   }
+   [...]
+   ```
 
 * Get info on just the `Administrator` user:
 
-```
-PS C:\Users\Administrator> puppet resource user Administrator
-user { 'Administrator':
-  ensure  => 'present',
-  comment => 'Built-in account for administering the computer/domain',
-  groups  => ['BUILTIN\Administrators'],
-  uid     => 'S-1-5-21-545430610-555444065-152929764-500',
-}
-```
+   ```
+   PS C:\Users\Administrator> puppet resource user Administrator
+   user { 'Administrator':
+     ensure  => 'present',
+     comment => 'Built-in account for administering the computer/domain',
+     groups  => ['BUILTIN\Administrators'],
+     uid     => 'S-1-5-21-545430610-555444065-152929764-500',
+   }
+   ```
 
 ### Use `puppet resource` to get information about a group
 
@@ -54,37 +54,37 @@ In a PowerShell window, run these two commands. The output should look similar t
 
 1. Get info on all groups:
 
-```
-PS C:\Users\Administrator> puppet resource group
-[...]
-group { 'Performance Log Users':
-  ensure => 'present',
-  gid    => 'S-1-5-32-559',
-}
-group { 'Performance Monitor Users':
-   ensure => 'present',
-   gid    => 'S-1-5-32-558',
-}
-group { 'Power Users':
-  ensure => 'present',
-  gid    => 'S-1-5-32-547',
-}
-group { 'Print Operators':
-  ensure => 'present',
-  gid    => 'S-1-5-32-550',
-}
-[...]
-```
+   ```
+   PS C:\Users\Administrator> puppet resource group
+   [...]
+   group { 'Performance Log Users':
+     ensure => 'present',
+     gid    => 'S-1-5-32-559',
+   }
+   group { 'Performance Monitor Users':
+      ensure => 'present',
+      gid    => 'S-1-5-32-558',
+   }
+   group { 'Power Users':
+     ensure => 'present',
+     gid    => 'S-1-5-32-547',
+   }
+   group { 'Print Operators':
+     ensure => 'present',
+     gid    => 'S-1-5-32-550',
+   }
+   [...]
+   ```
 
 1. Get info on just the group `power users`:
 
-```
-PS C:\Users\Administrator> puppet resource group 'power users'
-group { 'power users':
-  ensure => 'present',
-  gid    => 'S-1-5-32-547',
-}
-```
+   ```
+   PS C:\Users\Administrator> puppet resource group 'power users'
+   group { 'power users':
+     ensure => 'present',
+     gid    => 'S-1-5-32-547',
+   }
+   ```
 
 ### Use `puppet resource` to inspect the WinNTP service configuration
 
@@ -94,6 +94,11 @@ In a PowerShell window, run this command:
 
 ```
 PS C:\> puppet resource service W32Time
+```
+
+The output should be similar to this:
+
+```
 service { 'W32Time':
   ensure => 'running',
   enable => 'true',
