@@ -4,7 +4,7 @@ Git is a Version Control System that allows users to collaborate on code and hav
 
 The purpose of this tutorial is not to give you a full and complete understanding of Git but instead, this is designed to give you the necessary knowledge to be successful in class. In class we use a subset of git commands that will be shown here. Please use this as a reference for class, your company may and probably has a standard way they implement and use git.
 
-### Configure
+## Configure
 
 When you first start using Git, you need to setup your user information. To do this you can set two `--global` options like this...
 
@@ -42,7 +42,6 @@ Before you make any changes to a local repository, you want to ensure you have t
 
    ```git pull```
 
-
 ### Branches
 
 Branches are a way to copy all existing code into a `new` branch to work in without affecting the main branch, typically called `master`. By using branches, this allows multiple users to edit the same code without stepping on each others toes. Branches can be used to make new features, fix bugs etc.
@@ -70,16 +69,16 @@ Now that you have a local repository, now comes the fun part, editing local file
 First, though we need to understand how does Git know what to track in version control. This is where the stage comes into play. The stage, similar to the stage actors use, is where we put our files for Git to know about. Think of it this way, our local files are back stage, never seen by the public, however when we want the public to see them we have to put them out in front of them, hence staging our files. Within Git we use the `git add`
 
    ```git add --all```
-   
+
    ```git add -A```
-   
+
    ```git add .```
-   
+
    ```git add *```
 
-All of these do the pretty much the same thing, take anything that is in the local directory and add the files to the stage. Side note the `--all` and `-A` are the same thing. 
+All of these do the pretty much the same thing, take anything that is in the local directory and add the files to the stage. Side note the `--all` and `-A` are the same thing.
 
-Now that our files are on the stage, we need to commit them to the index and to do that we do a `git commit` and add a message. This message is to let others know the changes we made and why. You can put anything you want here, be as detailed as possible for your "future self". 
+Now that our files are on the stage, we need to commit them to the index and to do that we do a `git commit` and add a message. This message is to let others know the changes we made and why. You can put anything you want here, be as detailed as possible for your "future self".
 
    ```git commit -m [message]```
 
