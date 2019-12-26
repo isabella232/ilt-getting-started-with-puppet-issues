@@ -7,7 +7,7 @@ In this lab you will learn how to:
 * Identify the pre-installed tools and understand their purpose.
 * Install the Puppet agent from the command line.
 
-# Steps
+## Steps
 
 ## Windows
 
@@ -25,7 +25,7 @@ In this lab you will learn how to:
     * Switch to the Windows PowerShell window
     * See if Git is installed. If it is installed, the output of this command will show the installed version. Note that your version might be different than what is shown here.
 
-    ```
+    ```plaintext
     PS C:\Users\Administrator> git --version
     git version 2.18.0.windows.1
     ```
@@ -42,22 +42,22 @@ A basic installation script has been pre-staged in your home directory, at `C:\U
 
     ```PS C:\Users\Administrator> puppet agent --version```
 
-# Pause here and run the [Linux](../../Linux/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.
+**Pause here and run the [Linux](../../Linux/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.**
 
 ### Sign agent certificates
 
 Now that your agent has been installed, you have to sign the certificates so that the master trusts them and will allow the agents to retrieve configurations.
 
 * Connect to the Puppet Enterprise console (link is in the Welcome page).
-*  Log in:
-    * **username:** *studentN*
-    * **password:** *puppetlabs*
+* Log in:
+  * **username:** *studentN*
+  * **password:** *puppetlabs*
 * Navigate to **Unsigned certs** under **SETUP** on the left-hand menu.
 * In the **Node name** field, identify your node (using the hostname provided on the Welcome page) and click **Accept** next to the hostname.
 
 **_If you do not see your node in the listing, refresh the page. Also, keep in mind you will see all students machines here - please only accept your own and do not click **Accept All**._**
 
-*  On Windows, open a PowerShell window and run:
+* On Windows, open a PowerShell window and run:
 
     ```PS C:\Users\Administrator> puppet agent -t```
 
@@ -67,15 +67,17 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
     ```Notice: Applied catalog in X.XX seconds```
 
-# Discussion questions
+## Discussion questions
 
 * What are some of the benefits to new users of using a graphical development environment?
 * You installed the agent non-interactively using a single command. How might this be useful in production environments?
 
 Next Step
+
 ======
 
 [Linux Lab 5.1 Puppet Agent deployment](../../Linux/lab-05.1-Puppet-Agent-deployment)
+
 ---
 
 |  [Previous Lab](../lab-02.2-Running-Bolt-Commands)  |  [Next Lab](../lab-06.1-Puppet-resources)  |

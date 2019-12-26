@@ -6,16 +6,16 @@ In this lab you will learn how to:
 * Use the PDK Validate tool to ensure your module's code meets style recommendations.
 * Run compilation tests and update the code to resolve issues found.
 
-# Steps
+## Steps
 
-###  Validate your module's syntax and style
+### Validate your module's syntax and style
 
 1. Validate the `init.pp` file you created previously.
     ```$ pdk validate```
 
 The output should be similar to this:
 
-```
+```plaintext
 $ pdk validate
 pdk (INFO): Running all available validators...
 pdk (INFO): Using Ruby 2.4.4
@@ -35,13 +35,13 @@ If there were no errors in your syntax, proceed with this step to simulate one. 
 
 1. Edit the `init.pp` file to introduce a syntax error:
     1. Remove `$` from the `$servers` variable.
-    1. Save the file by pressing `Esc` and typing `:wq` and then `Enter`. 
+    1. Save the file by pressing `Esc` and typing `:wq` and then `Enter`.
 1. Re-run the PDK Validate tool:
     ```$ pdk validate```
-    
+
 The output should be similar to this:
 
-```
+```plaintext
 $ pdk validate
 pdk (INFO): Running all available validators...
 pdk (INFO): Using Ruby 2.4.4
@@ -63,7 +63,7 @@ Using the output and the syntax highlighting, find all errors in your code and r
 1. Fix the errors by referring to the solutions guide or working with your instructor.
 1. Rerun PDK Validate until all errors are gone.
 
-# Discussion questions
+## Discussion questions
 
 1. If you had not caught the syntax errors with this tool, when and how do you think those errors might cause problems later?
 

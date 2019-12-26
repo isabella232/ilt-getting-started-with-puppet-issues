@@ -1,4 +1,4 @@
-## Windows Exercise & Lab Guide
+# Windows Exercise & Lab Guide
 
 1. [Lab 1.1: Puppet product overview](lab-01.1-Puppet-product-overview)
 1. [Lab 2.1: Install Puppet Bolt](lab-02.1-Install-Puppet-Bolt)

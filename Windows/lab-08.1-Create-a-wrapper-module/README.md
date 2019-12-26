@@ -7,7 +7,7 @@ In this lab you will learn how to:
 * Add your module to version control.
 * Publish your module on the classroom version control server.
 
-# Steps
+## Steps
 
 ### Create the module structure
 
@@ -25,26 +25,26 @@ On Windows you have 2 options, Visual Studio Code (VSCode) or PowerShell, you co
 
 **_Replace the “N” in these answers with your student number (for example, `student8`)._**
 
-| Question           | Answer            |
-| ------------------ |-------------------|
-| **Module Name**        | *time*              |
-| **Forge Name**         | *studentN*          |
-| **Credit Author**      | *Student N*         |
-| **License**            | *Apache-2.0*        |
-| **Operating Systems**  | *RedHat and Windows*|
+| Question              | Answer               |
+|-----------------------|----------------------|
+| **Module Name**       | *time*               |
+| **Forge Name**        | *studentN*           |
+| **Credit Author**     | *Student N*          |
+| **License**           | *Apache-2.0*         |
+| **Operating Systems** | *RedHat and Windows* |
 
 * Press `Y` to generate the module in the current directory.
 
 * Change the current working directory to the module you created, then use the `pdk` command to create a new class called `time`.
 
-```
+```plaintext
 PS C:\Users\Administrator> cd time
 PS C:\Users\Administrator\time> pdk new class time
 ```
 
 The output should show the names of files that the last command created:
 
-```
+```plaintext
 pdk (INFO): Creating 'C:/Users/Administrator/time/manifests/init.pp' from template.
 pdk (INFO): Creating 'C:/Users/Administrator/time/spec/classes/time_spec.rb' from template.
 ```
@@ -65,7 +65,7 @@ In the Visual Studio Code application add resources to the `time` class.
         ```ruby
         class time {  
           $servers = ['time.google.com']
-            
+
           case $facts['kernel'] {
             'windows': {
               class { 'winntp':
@@ -83,16 +83,14 @@ In the Visual Studio Code application add resources to the `time` class.
 
 ### Track your module with version control
 
-It’s important to add your module’s files to version control so you can track changes. You will use Git as your version control software. 
+It’s important to add your module’s files to version control so you can track changes. You will use Git as your version control software.
 
 Before you can use Git, you need to configure it. These steps are the same for Windows and Linux:
 
-```
-$ git config --global user.email "noreply@puppet.com"
-$ git config --global user.name "studentN"
-```
+```$ git config --global user.email "noreply@puppet.com"```
+```$ git config --global user.name "studentN"```
 
-#### Now commit the code of your newly created module and class, as described below.
+#### Now commit the code of your newly created module and class, as described below
 
 1. Open Visual Studio Code.
 1. Choose **File > Open Folder**
@@ -126,7 +124,7 @@ $ git config --global user.name "studentN"
 1. Choose **Publish branch**.
 1. Choose **No** in the bottom right dialog about periodically running `git fetch`.
 
-Whether you are on Windows or Linux, you can inspect the files you just committed by pointing a web browser to https://classXXXX-gitlab.classroom.puppet.com/puppet/time/tree/studentN
+Whether you are on Windows or Linux, you can inspect the files you just committed by pointing a web browser to <https://classXXXX-gitlab.classroom.puppet.com/puppet/time/tree/studentN>
 
 **_If prompted to sign-in, use the username *studentN* and the password *puppetlabs*_**
 
@@ -138,17 +136,15 @@ Whether you are on Windows or Linux, you can inspect the files you just committe
 
 Optionally, add the time module to the platform you did not use for the earlier part of this lab.
 
-##### If you created the module on Windows and want to clone it to Linux
+#### If you created the module on Windows and want to clone it to Linux
 
 As the `centos` user on Linux run:
 
-```        
-$ git clone git@gitlab.classroom.puppet.com:puppet/time.git
-$ git fetch origin studentN
-$ git checkout studentN
-```
+```$ git clone git@gitlab.classroom.puppet.com:puppet/time.git```
+```$ git fetch origin studentN```
+```$ git checkout studentN```
 
-# Discussion questions
+## Discussion questions
 
 1. Is using PDK required when you create a new module? If not, what advantages do you get from using PDK?
 1. What problems do you solve by using a version control system like Git?

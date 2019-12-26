@@ -6,9 +6,9 @@ In this lab you will learn how to:
 * Use the PDK Validate tool to ensure your module's code meets style recommendations.
 * Run compilation tests and update the code to resolve issues found.
 
-# Steps
+## Steps
 
-###  Validate your module's syntax and style
+### Validate your module's syntax and style
 
 1. Open the Visual Studio Code editor.
 1. Choose **File > Open File**.
@@ -16,11 +16,11 @@ In this lab you will learn how to:
 1. Change directories into `manifests`.
 1. Edit the `init.pp` file you created previously.
 1. Select the ellipsis in the upper right corner of the editor pane.
-1. Choose **PDK Validate** from the drop down menu. 
+1. Choose **PDK Validate** from the drop down menu.
 
 The output should be similar to this:
 
-```
+```plaintext
 PS C:\Users\Administrator\time> pdk validate
 pdk (INFO): Running all available validators...
 pdk (INFO): Using Ruby 2.4.4
@@ -43,11 +43,11 @@ If there were no errors in your syntax, proceed with this step to simulate one. 
     1. Click **File > Save**.
 1. Re-run the PDK Validate tool:
     1. Select the ellipsis in the upper right hand corner of the editor pane.
-    1. Select **PDK Validate** from the drop down menu. 
-    
+    1. Select **PDK Validate** from the drop down menu.
+
 The output should be similar to this:
 
-```
+```plaintext
 PS C:\Users\Administrator\time> pdk validate
 pdk (INFO): Running all available validators...
 pdk (INFO): Using Ruby 2.4.4
@@ -69,7 +69,7 @@ Using the output and the syntax highlighting, find all errors in your code and r
 1. Fix the errors by referring to the solutions guide or working with your instructor.
 1. Rerun PDK Validate until all errors are gone.
 
-# Discussion questions
+## Discussion questions
 
 1. If you had not caught the syntax errors with this tool, when and how do you think those errors might cause problems later?
 

@@ -21,7 +21,7 @@ will not provide general assistance with the Linux command line during class.
 
 Future labs will use the tools and workflow that are introduced in this module.
 
-# Steps
+## Steps
 
 ## Linux
 
@@ -29,7 +29,7 @@ Future labs will use the tools and workflow that are introduced in this module.
 
 Verify that Git is installed. You will use this for version control when you edit Puppet code. To do this, run this command in a terminal window. If Git is installed, the output of this command will show the installed version. Note that your version might be different than what is shown here.
 
-```
+```plaintext
 $ git --version
 git version 1.8.3.1
 ```
@@ -46,7 +46,7 @@ A basic installation script has been pre-staged in your home directory, at `~/in
 
     ```$ puppet --version```
 
-# Pause here and run the [Windows](../../Windows/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.
+**Pause here and run the [Windows](../../Windows/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.**
 
 ### Sign agent certificates
 
@@ -54,8 +54,8 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
 * Connect to the Puppet Enterprise console (link is in the Welcome page).
 * Log in:
-    * **username:** *studentN*
-    * **password:** *puppetlabs*
+  * **username:** *studentN*
+  * **password:** *puppetlabs*
 * Navigate to **Unsigned certs** under **SETUP** on the left menu.
 * In the **Node name** field, identify your node (using the hostname provided on the Welcome page) and click **Accept** next to the hostname.
 
@@ -69,16 +69,17 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
     ```Notice: Applied catalog in X.XX seconds```
 
-
-# Discussion questions
+## Discussion questions
 
 * What are some of the benefits to new users of using a graphical development environment?
 * You installed the agent non-interactively using a single command. How might this be useful in production environments?
 
 Next Step
+
 ======
 
 [Windows Lab 5.1 Puppet Agent deployment](../../Windows/lab-05.1-Puppet-Agent-deployment)
+
 ---
 
 |  [Previous Lab](../lab-02.2-Running-Bolt-Commands)  |  [Next Lab](../lab-06.1-Puppet-resources)  |

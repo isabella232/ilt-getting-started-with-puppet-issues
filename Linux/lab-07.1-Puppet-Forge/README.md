@@ -8,19 +8,19 @@ In this lab you will learn how to:
 * Classify nodes with installed modules and configure class parameters.
 * Run the Puppet agent manually and observe node configuration changes.
 
-# Steps
+## Steps
 
 Follow along with the instructor as he or she demonstrates the capabilities of the Puppet Forge. As the demonstration proceeds, you may perform the same steps in your own web browser.
 
 ### Explore the Forge website
 
-Navigate to the Puppet Forge at https://forge.puppet.com and observe the number of modules available for download. New modules are continually added by Puppet, partner companies, and third-party developers. If you develop a module that you think the community could benefit from, the Puppet Forge is the place to house it.
+Navigate to the Puppet Forge at <https://forge.puppet.com> and observe the number of modules available for download. New modules are continually added by Puppet, partner companies, and third-party developers. If you develop a module that you think the community could benefit from, the Puppet Forge is the place to house it.
 
 The Forge web site has been constructed to help you quickly find what you need. Notice that you are prompted for something that you want to automate, what type of module (supported or otherwise), what platform support you need, and whether you want a module with tasks included.
 
 ### Search for a module
 
-You are using a Linux agent node, enter `ntp` in the search box and click **Search**. 
+You are using a Linux agent node, enter `ntp` in the search box and click **Search**.
 
 ### Find detailed information about a module
 
@@ -33,8 +33,8 @@ This page includes a great deal of useful information, including supported opera
 Puppet modules are installed on the Puppet master so they are available during catalog compilation. They can also be installed on a workstation for use with the `puppet apply` command during Puppet code development. In either case, they must be installed in a directory that is included in the **modulepath** so the Puppet toolset can find them.
 
 Use the `puppet` tool to see the `modulepath`. The output will include one or more directories, separated by the platform separator character. Your output might differ from what the sample shown here:
- 
-```
+
+```plaintext
 $ sudo puppet config print modulepath
 /etc/puppetlabs/code/environments/production/modules:/root/puppetcode/modules:/etc/puppetlabs/code/modules
 ```
@@ -47,16 +47,14 @@ Some modules have **dependencies**, meaning they rely on code from another modul
 
 Copy and paste the module installation commands (shown on each module’s Forge page) into the command line on the node:
 
-```
-$ sudo puppet module install puppetlabs/stdlib --version 5.2.0
-$ sudo puppet module install puppetlabs/ntp
-```
+```$ sudo puppet module install puppetlabs/stdlib --version 5.2.0```
+```$ sudo puppet module install puppetlabs/ntp```
 
 ### Verify the installation
 
 Verify the installation of the module (your output might differ):
- 
-```
+
+```plaintext
 $ sudo puppet module list --tree
 /etc/puppetlabs/code/environments/production/modules
   └─┬puppetlabs-ntp (v7.2.0)
@@ -97,10 +95,10 @@ The instructor has already installed the modules to the Puppet master, and they 
 Trigger a Puppet run on your machine. Observe the output of the command showing the Puppet run and configuration of the time service on the node.
 
 ```$ sudo puppet agent -t```
-    
+
 Once the run completes, verify the time on the system and ensure that it is accurate. For further verification that the service is configured correctly, open the `/etc/ntp.conf` file to check the list of NTP servers.
 
-# Discussion questions
+## Discussion questions
 
 1. What modules might you find on the Forge, that could be useful at your company?
 1. Do you think the operations you performed on the Puppet Enterprise console could have been performed with command line tools instead?

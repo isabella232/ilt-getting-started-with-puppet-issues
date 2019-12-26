@@ -7,11 +7,11 @@ In this lab you will learn how to:
 * Add the time profile to the base profile.
 * Create a bastion role and add the base profile to it.
 
-**_Whenever you see_** **classXXXX,** **_ it refers to your class ID, such as_** **class1809.**
+**_Whenever you see_** **classXXXX,** **_it refers to your class ID, such as_** **class1809.**
 
-**_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
+**_Whenever you see_** **studentN,** **_it refers to your assigned student number, such as_** **student4.**
 
-# Steps
+## Steps
 
 ### Clone the control repository
 
@@ -19,12 +19,10 @@ In this task, you will clone the control repository to your Windows or Linux wor
 
 Run these commands to clone the control repository:
 
-   ```
-   $ cd ~
-   $ git clone git@gitlab.classroom.puppet.com:puppet/control-repo.git
-   $ cd control-repo
-   $ git checkout studentN
-```
+   ```$ cd ~```
+   ```$ git clone git@gitlab.classroom.puppet.com:puppet/control-repo.git```
+   ```$ cd control-repo```
+   ```$ git checkout studentN```
 
 ### Create a base profile
 
@@ -32,7 +30,7 @@ With your control repository cloned locally, you are ready to start updating Pup
 
 Time is a perfect module to add to the `base` profile: that is, a profile that should be configured on every workstation. In this simple profile, you are going to include your time class. In this way, you will ensure that all systems apply the `base` profile, and included in the `base` profile is the time class.
 
-1. In the `control-repo/site/profile/manifests` directory, create a new file called `base.pp`. It will open in the Visual Studio Code window on the right. 
+1. In the `control-repo/site/profile/manifests` directory, create a new file called `base.pp`. It will open in the Visual Studio Code window on the right.
 1. Update `base.pp` to contain these contents:
 
     ```ruby
@@ -44,7 +42,7 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
 ### Convert the profile module using the Pupppet Developer Kit
 
 1. Change directories to `control-repo/site/profile`
-    
+
     ```$ cd ~/control-repo/site/profile```
 
 1. Run the PDK convert command
@@ -91,7 +89,7 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 ### Convert the role module using the Pupppet Developer Kit
 
 1. Change directories to `control-repo/site/role`
-    
+
     ```$ cd ~/control-repo/site/role```
 
 1. Run the PDK convert command
@@ -108,7 +106,7 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 
 ## Apply the `bastion` role to your workstation
 
-Now that you have tested your profile and role, it is time to apply the role to your workstation. 
+Now that you have tested your profile and role, it is time to apply the role to your workstation.
 
 In this lab, you will test it with `puppet apply`. In a future lab, you will see how to classify your node in the Puppet Enterprise master.
 
@@ -117,7 +115,7 @@ Create an `examples` directory where you can place files to test your profile:
 1. Navigate to `~/control-repo/site/role` and make the `examples` directory.
 1. Inside the `examples` directory, add a file called `bastion.pp`. Your file system structure should look like this:
 
-    ```
+    ```plaintext
     site
     |_role
       |_examples
@@ -133,7 +131,7 @@ Create an `examples` directory where you can place files to test your profile:
 1. Save `bastion.pp`.
 1. Now you can smoke test this class, change directory to your `control-repo\site\role` directory. First run a smoke test (noop) and then `puppet apply` the role:
 
-#### Smoke test your code
+### Smoke test your code
 
 1. Navigate to the right directory:
 
@@ -149,10 +147,8 @@ Create an `examples` directory where you can place files to test your profile:
 
 1. Verify Puppet actually changed your time server to `time.google.com` by running this command. Your output should be similar.
 
-    ```
-    $ grep server /etc/ntp.conf
-    $ server time.google.com
-    ```
+    ```$ grep server /etc/ntp.conf```
+    ```$ server time.google.com```
 
 **_In the commands above, you might wonder what `modulepath` is. We need to supply this option so Puppet knows where to look for Puppet code._**
 
@@ -160,16 +156,14 @@ Create an `examples` directory where you can place files to test your profile:
 
 Run these commands:
 
-```
-$ cd control-repo
-$ git add .
-$ git commit -m 'Adding Bastion Role and Base Profile'
-$ git push origin studentN
-```
+```$ cd control-repo```
+```$ git add .```
+```$ git commit -m 'Adding Bastion Role and Base Profile'```
+```$ git push origin studentN```
 
 In the next lab, you will expand on the base profile.
 
-# Discussion questions
+## Discussion questions
 
 1. How do roles and profiles differ?
 1. At your job, what are some roles that could be useful?

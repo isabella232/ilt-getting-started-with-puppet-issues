@@ -7,7 +7,7 @@ In this lab you will learn how to:
 * Create roles and profiles in the Puppet Enterprise console.
 * Classify nodes and deploy the bastion role.
 
-# Setup
+## Setup
 
 In this lab, you will apply Puppet code locally to make changes, commit the code to GitLab and then push the changes to your workstations via the Puppet master.
 
@@ -17,14 +17,14 @@ You will need additional modules for future labs, and now that you are familiar 
 
 ### Install additional support modules
 
-```
+```plaintext
 PS C:\Users\Administrator> puppet module install puppetlabs-registry --version 2.1.0
 PS C:\Users\Administrator> puppet module install puppet/windows_firewall --version 2.0.2
 ```
 
-# Steps
+## Steps
 
-## Create platform-specific security profiles
+### Create platform-specific security profiles
 
 #### Inspect code for the new security profiles
 
@@ -133,9 +133,9 @@ Since you want security on all workstations, it makes sense to add the `security
 1. Save `security_baseline.pp`
 1. Test the new profile:
 
-    ```
+    ```plaintext
     PS C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site
-    
+
     # This is the smoke test.
     PS C:\Users\Administrator> puppet apply profile\examples\security_baseline.pp `
       --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;`
@@ -146,7 +146,7 @@ Since you want security on all workstations, it makes sense to add the `security
 
 ### Commit and push changes
 
-1. In Visual Studio Code, click the source control (Git icon) on the left menu. 
+1. In Visual Studio Code, click the source control (Git icon) on the left menu.
 1. When it asks for a commit message, type:
 
     ```Adding security_baseline profile```
@@ -159,7 +159,7 @@ This task involves creating roles and profiles similar to those that you made in
 
 ### Log in to the Puppet Enterprise console
 
-1. Point your browser at https://classXXXX-master.classroom.puppet.com/
+1. Point your browser at <https://classXXXX-master.classroom.puppet.com/>
 
 1. Enter the credentials:
     * **username:** *studentN*  
@@ -215,7 +215,7 @@ This will take a few minutes as Puppet runs and collects data on both nodes. You
 
 **_If you click the date/time stamp under Report, it will give you details of the Puppet run._**
 
-# Discussion questions
+## Discussion questions
 
 1. Why might building up a hierarchy of profiles — instead of just creating a single profile — be useful?
 1. Can you think of a hierarchy of profiles that might be useful in your work environment?

@@ -27,7 +27,7 @@ Use RDP to connect to the Windows machine you will run Bolt on. Once you are con
 
 The output will be similar to this:
 
-```
+```plaintext
 STDOUT:
    The Windows Time service is stopping.
    The Windows Time service was stopped successfully.
@@ -36,7 +36,7 @@ Successful on 1 node: winrm://localhost
 Ran on 1 node in 2.61 seconds
 ```
 
-# Pause here and run the [Linux](../../Linux/lab-02.2-Running-Bolt-Commands) Exercise before continuing.
+**Pause here and run the [Linux](../../Linux/lab-02.2-Running-Bolt-Commands) Exercise before continuing.**
 
 ### Use Bolt to run remote system commands
 
@@ -56,7 +56,7 @@ On your Windows machine, run the following in a PowerShell window:
 
 The output will look similar to the following:
 
-   ```
+   ```plaintext
    Started on <your-linux-machine>.classroom.puppet.com...
    Finished on <your-linux-machine>.classroom.puppet.com:
    Successful on 1 node: ssh://<your-linux-machine>.classroom.puppet.com
@@ -71,7 +71,7 @@ Run the following in a PowerShell window:
 
 The output will look similar to the following:
 
-```
+```plaintext
 STDOUT:
    ntpd.service - Network Time Service
    Loaded: loaded (/usr/lib/systemd/system/ntpd.service; enabled; vendor preset: disabled)
@@ -107,7 +107,7 @@ On your Windows machine, run the following in a PowerShell window:
 
 The output will look similar to the following:
 
-```
+```plaintext
 STDOUT:
    Setting MOTD...
    Completed setting MOTD!
@@ -123,16 +123,18 @@ Successful on 1 node: ssh://<your-linux-machine>.classroom.puppet.com
 Ran on 1 node in 2.00 seconds
 ```
 
-# Discussion questions
+## Discussion questions
 
 * How might you use Bolt for simple ad hoc administration tasks?
 * What could you do if you want to run against a large group of hosts instead of a single target?
 * How might being able to run existing scripts help you enable other teams?
 
 Next Step
+
 ======
 
 [Linux Lab 2.2 Running Bolt Commands](../../Linux/lab-02.2-Running-Bolt-Commands)
+
 ---
 
 |  [Previous Lab](../lab-02.1-Install-Puppet-Bolt)  |  [Next Lab](../lab-05.1-Puppet-Agent-deployment)  |

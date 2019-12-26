@@ -90,11 +90,9 @@ Now run your code and see the application get deployed.
 1. Validate that the application is running properly:
     1. On Linux, use curl to validate that the embedded web server is responding:
 
-      ```
-      $ curl -L localhost:9999
-      ```
+      ```$ curl -L localhost:9999```
 
-# Discussion questions
+## Discussion questions
 
 1. What do you think happens if a managed node is missing some dependency when Puppet tries to apply a role or profile (for example, if the Java environment is not installed)?
 1. Can you summarize the difference between a role and a profile?

@@ -5,7 +5,7 @@ In this lab you will learn how to:
 * Install the open source Bolt utility on Linux machines.
 * Execute a simple command to validate that Bolt is working.
 
-# Steps
+## Steps
 
 ### Installing Bolt onto a **Linux** target machine
 
@@ -17,7 +17,7 @@ In this lab you will install Bolt using the built-in package manager of the Linu
 
 #### Connect to the Linux target machine using PuTTY or OpenSSH
 
-**PuTTY method**
+### PuTTY method
 
 1. On your Windows student machine, open a PowerShell window
 1. Launch PuTTY:
@@ -37,7 +37,7 @@ In this lab you will install Bolt using the built-in package manager of the Linu
 
 **_For any future connections to this host, you can now simply double-click_** **linux_machine** **_in the_** **Saved Sessions** **_window._**
 
-**OpenSSH method**
+### OpenSSH method
 
 1. On your Windows student machine, open a PowerShell window
 1. Install openssh using chocolatey:
@@ -59,7 +59,7 @@ On the Linux machine, add the required YUM repository and install the Bolt packa
 
 Note that your version might be slightly different.
 
-```
+```plaintext
 $ bolt --version
 1.39.0
 ```
@@ -75,9 +75,11 @@ or simply:
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
 
 Next Step
+
 ======
 
 [Windows Lab 2.1 Install Puppet Bolt](../../Windows/lab-02.1-Install-Puppet-Bolt)
+
 ---
 
 |  [Previous Lab](../lab-01.1-Puppet-product-overview)  |  [Next Lab](../lab-02.2-Running-Bolt-Commands)  |

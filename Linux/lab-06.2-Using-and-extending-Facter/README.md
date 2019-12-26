@@ -7,7 +7,7 @@ In this lab, you will become familiar with the Facter tool by learning how to:
 * Install an external fact script and run it with Facter.
 * Display fact values in the Puppet Enterprise console.
 
-# Steps
+## Steps
 
 Facter is invoked on managed nodes during each Puppet agent run. Facter gathers information about the node and sends it to the Puppet master for use during the catalog compilation phase. Typical information gathered by Facter might include IP address, amount of installed memory, kernel version, and other machine-specific information.
 
@@ -19,7 +19,7 @@ Run the following commands on your Windows or Linux classroom agent node, not on
 
 Run Facter on an agent node to see a list of all facts it can determine about that node (your output will differ from this abridged sample output):
 
-```
+```plaintext
 $ facter
   aio_agent_version => 5.5.1
   augeas => {
@@ -50,7 +50,7 @@ Notice in the previous sample output, the `is_virtual` fact is a simple string v
 
 View a single, structured fact about the agent node's `os` fact (your output will differ from this abridged sample output):
 
-```
+```plaintext
 $ facter os
   {
     architecture => "x86_64",
@@ -79,7 +79,7 @@ Facter also gathers and displays facts that have simple string values.
 
 View a simple string fact about the agent node's `kernel` fact (your output will differ from this sample output if you are on Windows):
 
-```
+```plaintext
 $ facter kernel
 Linux
 ```
@@ -107,28 +107,27 @@ Next, move the provided external fact script into place:
 1. Create the Facter location:
 
     ```$ sudo mkdir -p /etc/puppetlabs/facter/facts.d```
-        
+
 1. Move the script into place where Facter can execute it:
 
     ```$ sudo mv datacenter.sh /etc/puppetlabs/facter/facts.d```
-        
+
 1. Make the script executable:
 
      ```$ sudo chmod +x /etc/puppetlabs/facter/facts.d/datacenter.sh```
-        
+
 1. View the shell script, which echoes a key/value pair and exits:
 
     ```vi /etc/puppetlabs/facter/facts.d/datacenter.sh```
 
-
 Finally, verify that the fact has been installed and is accessible by Facter. Notice the new output.
 
-```
+```plaintext
 $ sudo facter datacenter
 pdx
 ```
 
-# Discussion questions
+## Discussion questions
 
 * Are there any unusual aspects of your company's infrastructure that you might want to capture with external fact scripts?
 * Which is easier: remembering the single syntax used by Facter, or the many syntaxes used by different command line tools for collecting the same facts?

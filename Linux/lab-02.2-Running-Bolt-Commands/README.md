@@ -7,7 +7,7 @@ In this lab you will learn how to:
 
 **_For the remainder of this lab, you will use instructions for both [Windows](../../Windows/lab-02.2-Running-Bolt-Commands) and Linux. Follow both sets of instructions, so you get experience running Bolt on both platforms._**
 
-# Steps
+## Steps
 
 ### Use Bolt to run a command on the local machine
 
@@ -25,14 +25,14 @@ Use SSH to connect to the Linux machine you will run Bolt on. Once you are conne
 
 The output will be similar to this:
 
-```
+```plaintext
 Started on localhost...
 Finished on localhost:
 Successful on 1 node: ssh://localhost
 Ran on 1 node in 0.45 seconds
 ```
 
-# Pause here and run the [Windows](../../Windows/lab-02.2-Running-Bolt-Commands) Exercise before continuing.
+**Pause here and run the [Windows](../../Windows/lab-02.2-Running-Bolt-Commands) Exercise before continuing.**
 
 ### Use Bolt to run remote system commands
 
@@ -52,15 +52,13 @@ On your Linux machine, run the following in a terminal window:
 
 The output will look similar to the following:
 
-```
+```plaintext
 STDOUT:
    The Windows Time service is starting.
    The Windows Time service was started successfully.
 ```
 
 #### Validate that the time service is running
-
-##### Use Bolt on a Linux machine to run a command on a Windows machine
 
 On your Linux machine, run the following in a terminal window:
 
@@ -70,7 +68,7 @@ On your Linux machine, run the following in a terminal window:
 
 The output will look similar to the following:
 
-```
+```plaintext
 STDOUT:
 
    Status   Name               DisplayName
@@ -100,7 +98,7 @@ On your Linux machine, run the following in a terminal window:
 
 The output will look similar to the following:
 
-```
+```plaintext
 STDOUT:
    Updating the MOTD Info...
    MOTD Set successfully!
@@ -120,16 +118,18 @@ Successful on 1 node: winrm://<your-windows-machine>.classroom.puppet.com
 Ran on 1 node in 6.08 seconds
 ```
 
-# Discussion questions
+## Discussion questions
 
 * How might you use Bolt for simple ad hoc administration tasks?
 * What could you do if you want to run against a large group of hosts instead of a single target?
 * How might being able to run existing scripts help you enable other teams?
 
 Next Step
+
 ======
 
 [Windows Lab 2.2 Running Bolt Commands](../../Windows/lab-02.2-Running-Bolt-Commands)
+
 ---
 
 |  [Previous Lab](../lab-02.1-Install-Puppet-Bolt)  |  [Next Lab](../lab-05.1-Puppet-Agent-deployment)  |

@@ -10,15 +10,15 @@ As you have learned, roles and profiles are important constructs that help you m
 
 In this lesson, you will learn how to customize your shared profiles so they are truly reusable for all conditions. Specifically, you will update the time profile you created in an earlier lab. You will reclassify your nodes several times to show all the ways you can manipulate data from within the Puppet Enterprise console.
 
-**_Whenever you see_** **classXXXX,** **_ it refers to your class ID, such as_** **class1809.**
+**_Whenever you see_** **classXXXX,** **_it refers to your class ID, such as_** **class1809.**
 
-**_Whenever you see_** **studentN,** **_ it refers to your assigned student number, such as_** **student4.**
+**_Whenever you see_** **studentN,** **_it refers to your assigned student number, such as_** **student4.**
 
-# Setup
+## Setup
 
 To complete this lab, you will need either a Windows host machine using Visual Studio Code, or a Linux shell.
 
-# Steps
+## Steps
 
 ### Update the time module
 
@@ -45,7 +45,7 @@ class time (
 
 What did you just do? For one, you deleted the static values used in a previous version of this class: `$servers = ['time.google.com']`. Also, you updated the class to use a class parameter (line 2 of the new version). Line 2 defines the `$servers` parameter, which is undefined by default. This means that if no value is passed for this parameter, the default time servers in class `winntp` and `ntp` will be used.
 
-### Commit your code, and push it to a remote repo:
+### Commit your code, and push it to a remote repo
 
 1. In Visual Studio Code, click the Source Control (fork) icon on the left.
 1. Select the checkbox next to **SOURCE CONTROL: GIT** (and click **yes** if prompted).
@@ -75,7 +75,8 @@ For this step, you will set the values of the time servers in the Puppet Enterpr
     * Scroll down to the **Data** section at the bottom of the **Configuration** tab.
     * Populate the **Class** field with *time*
     * Populate the **Parameter** field with *servers*
-    * Populate the **Value** field with *["time.google.com","time1.google.com"]* <br/>
+    * Populate the **Value** field with *["time.google.com","time1.google.com"]*
+  
     Remember that you set up your time profile to accept an array? The Puppet Enterprise console also allows you to supply structured data in JSON format (as you are doing in this step). You must enter any structured data in JSON format or it will be converted to a string. Be sure to use double quotes around the values inside the JSON array.
     * Click **Add data** on the right side.
     * Click **Commit ... changes** in the lower right corner.
@@ -85,7 +86,7 @@ For this step, you will set the values of the time servers in the Puppet Enterpr
     1. Click **Run job**.
     1. You will see that both hosts have made changes. Click their respective **Report** links to view the details.
 
-# Discussion questions
+## Discussion questions
 
 1. What is the advantage of using parameters to configure services on your nodes, instead of hard-coded strings?
 1. Are there any disadvantages to using parameters?
