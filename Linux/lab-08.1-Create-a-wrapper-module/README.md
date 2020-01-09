@@ -34,6 +34,7 @@ In this task, you will create the `time` module with a single `time` class. The 
 * Change the current working directory to the module you created, then use the `pdk` command to create a new class called `time`. The commands are the same for Windows and Linux:
 
 ```$ cd time```
+
 ```$ pdk new class time```
 
 The output should show the names of files that the last command created:
@@ -79,6 +80,7 @@ It’s important to add your module’s files to version control so you can trac
 1. Before you can use Git, you need to configure it. These steps are the same for Windows and Linux:
 
     ```$ git config --global user.email "noreply@puppet.com"```
+
     ```$ git config --global user.name "studentN"```
 
 2. Now commit the code of your newly created module and class, as described below.
@@ -109,7 +111,9 @@ It’s important to add your module’s files to version control so you can trac
 4. Run the following:
 
     ```$ git init```
+
     ```$ git add --all```
+
     ```$ git commit -m "Initial Commit"```
 
 ### Publish your module

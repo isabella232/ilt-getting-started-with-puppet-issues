@@ -20,8 +20,11 @@ In this task, you will clone the control repository to your Windows or Linux wor
 Run these commands to clone the control repository:
 
    ```$ cd ~```
+
    ```$ git clone git@gitlab.classroom.puppet.com:puppet/control-repo.git```
+
    ```$ cd control-repo```
+
    ```$ git checkout studentN```
 
 ### Create a base profile
@@ -157,8 +160,11 @@ Create an `examples` directory where you can place files to test your profile:
 Run these commands:
 
 ```$ cd control-repo```
+
 ```$ git add .```
+
 ```$ git commit -m 'Adding Bastion Role and Base Profile'```
+
 ```$ git push origin studentN```
 
 In the next lab, you will expand on the base profile.

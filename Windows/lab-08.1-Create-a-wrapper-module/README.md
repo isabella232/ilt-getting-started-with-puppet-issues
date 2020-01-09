@@ -88,6 +88,7 @@ It’s important to add your module’s files to version control so you can trac
 Before you can use Git, you need to configure it. These steps are the same for Windows and Linux:
 
 ```$ git config --global user.email "noreply@puppet.com"```
+
 ```$ git config --global user.name "studentN"```
 
 #### Now commit the code of your newly created module and class, as described below
@@ -141,7 +142,9 @@ Optionally, add the time module to the platform you did not use for the earlier 
 As the `centos` user on Linux run:
 
 ```$ git clone git@gitlab.classroom.puppet.com:puppet/time.git```
+
 ```$ git fetch origin studentN```
+
 ```$ git checkout studentN```
 
 ## Discussion questions

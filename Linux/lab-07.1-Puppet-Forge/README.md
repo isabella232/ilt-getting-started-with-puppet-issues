@@ -48,6 +48,7 @@ Some modules have **dependencies**, meaning they rely on code from another modul
 Copy and paste the module installation commands (shown on each module’s Forge page) into the command line on the node:
 
 ```$ sudo puppet module install puppetlabs/stdlib --version 5.2.0```
+
 ```$ sudo puppet module install puppetlabs/ntp```
 
 ### Verify the installation
