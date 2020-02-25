@@ -11,7 +11,7 @@ In this lab you will learn how to:
 ### Validate your module's syntax and style
 
 1. Validate the `init.pp` file you created previously.
-    ```$ pdk validate```
+    ```pdk validate```
 
 The output should be similar to this:
 
@@ -37,7 +37,7 @@ If there were no errors in your syntax, proceed with this step to simulate one. 
     1. Remove `$` from the `$servers` variable.
     1. Save the file by pressing `Esc` and typing `:wq` and then `Enter`.
 1. Re-run the PDK Validate tool:
-    ```$ pdk validate```
+    ```pdk validate```
 
 The output should be similar to this:
 

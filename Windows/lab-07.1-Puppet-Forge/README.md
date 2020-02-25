@@ -97,7 +97,7 @@ The instructor has already installed the modules to the Puppet master, and they 
 
 Trigger a Puppet run on your machine. Observe the output of the command showing the Puppet run and configuration of the time service on the node.
 
-```PS C:\Users\Administrator> puppet agent -t```
+```puppet agent -t```
 
 Once the run completes, verify the time on the system and ensure that it is accurate. For further verification that the service is configured correctly, issue the `w32tm /query /status` command on Windows.
 

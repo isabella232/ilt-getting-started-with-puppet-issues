@@ -34,7 +34,7 @@ Starter code to add to create two new security profiles (one for Windows, one fo
 
 This Puppet code enables the Windows Firewall and opens three ports: ICMP (ping), WinRM (remote scripting) and RDP (remote console).
 
-In Visual Studio Code, validate that the content of the file `site/profile/manifests/baseline/windows/firewall.pp` is as follows:
+In Visual Studio Code, validate that the content of the file `control-repo/site/profile/manifests/baseline/windows/firewall.pp` is as follows:
 
 ```ruby
 class profile::baseline::windows::firewall {
@@ -84,7 +84,7 @@ Now you will wrap together the two security profiles you just created into a sin
 
 This profile contains a case statement that takes the `kernel` fact and determines what profiles to apply based on the operating system.
 
-Validate that the content of `site/profile/manifests/security_baseline.pp` as follows:
+Validate that the content of `control-repo/site/profile/manifests/security_baseline.pp` as follows:
 
 ```ruby
 class profile::security_baseline {
@@ -107,7 +107,7 @@ class profile::security_baseline {
 
 Since you want security on all workstations, it makes sense to add the `security_baseline` profile to `base.pp`. This ensures that every workstation gets the proper security configuration.
 
-1. Open `site/profile/manifests/base.pp`, and declare the `profile::security_baseline` class:
+1. Open `control-repo/site/profile/manifests/base.pp`, and declare the `profile::security_baseline` class:
 
     ```ruby
     class profile::base {

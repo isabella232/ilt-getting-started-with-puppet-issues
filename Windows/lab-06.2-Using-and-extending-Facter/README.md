@@ -95,14 +95,14 @@ Facter gathers built-in (core) facts that are packaged with Facter. It can also 
 
 First, check that the `datacenter` fact does not already exist. This command should produce no value:
 
-```PS C:\Users\Administrator> facter datacenter```
+```facter datacenter```
 
 Next, move the provided external fact script into place:
 
 1. Open Windows Explorer.
-1. Download `datacenter.ps1` from this presentation's download section.
-1. Move the script into place where Facter can execute it by copying `datacenter.ps1` to `C:\ProgramData\PuppetLabs\facter\facts.d`
-1. View the PowerShell script in Microsoft Visual Studio Code. The script echoes a key/value pair and exits.
+2. Download `datacenter.ps1` from this presentation's download section.
+3. Move the script into place where Facter can execute it by copying `datacenter.ps1` to `C:\ProgramData\PuppetLabs\facter\facts.d`
+4. View the PowerShell script in Microsoft Visual Studio Code. The script echoes a key/value pair and exits.
 
 Finally, verify that the fact has been installed and is accessible by Facter. Notice the new output.
 

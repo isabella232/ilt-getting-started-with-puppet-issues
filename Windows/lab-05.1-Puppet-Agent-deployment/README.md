@@ -36,11 +36,11 @@ A basic installation script has been pre-staged in your home directory, at `C:\U
 
 1. Install the agent on your local system by using Bolt to run the script in an Administrator PowerShell.
 
-    ```PS C:\Users\Administrator> bolt script run install_pe_agent.ps1 --targets winrm://localhost --user Administrator --no-ssl --password-prompt```
+    ```bolt script run install_pe_agent.ps1 --targets winrm://localhost --user Administrator --no-ssl --password-prompt```
 
 1. Verify that the agent installed correctly by navigating to the Start button, then to the Puppet application folder. Click **Start Command prompt with Puppet**. In the new window, run this command. If the output displays a version, the installation was successful.
 
-    ```PS C:\Users\Administrator> puppet agent --version```
+    ```puppet agent --version```
 
 **Pause here and run the [Linux](../../Linux/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.**
 
@@ -59,7 +59,7 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
 * On Windows, open a PowerShell window and run:
 
-    ```PS C:\Users\Administrator> puppet agent -t```
+    ```puppet agent -t```
 
 **_If you do not open a new shell you will likely get an error about the command `puppet` not being found. This is because your system path has changed after you opened the shell. Close and open a new PowerShell window to avoid this._**
 

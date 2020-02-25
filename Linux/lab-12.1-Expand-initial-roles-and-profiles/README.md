@@ -13,7 +13,7 @@ In this lab, you will apply Puppet code locally to make changes, commit the code
 
 You will need additional modules for future labs, and now that you are familiar with the `puppet module install` command, you can make sure extra modules are installed. To complete the module installation process, run this command:
 
-```$ sudo puppet module install ghoneycutt/ssh```
+```sudo puppet module install ghoneycutt/ssh```
 
 ## Steps
 
@@ -27,7 +27,7 @@ Starter code to add to create two new security profiles (one for Windows, one fo
 
 This Puppet code enables the Windows Firewall and opens three ports: ICMP (ping), WinRM (remote scripting) and RDP (remote console).
 
-Validate that the content of the file `site/profile/manifests/baseline/windows/firewall.pp` is as follows:
+Validate that the content of the file `control-repo/site/profile/manifests/baseline/windows/firewall.pp` is as follows:
 
 ```ruby
 class profile::baseline::windows::firewall {
@@ -75,7 +75,7 @@ class profile::baseline::windows::firewall {
 
 This Puppet code for Linux workstations enables root login via SSH and creates a session timeout of two hours.
 
-Validate that the content of the file `site/profile/manifests/baseline/linux/ssh_config.pp` as follows:
+Validate that the content of the file `control-repo/site/profile/manifests/baseline/linux/ssh_config.pp` as follows:
 
 ```ruby
 class profile::baseline::linux::ssh_config {
@@ -93,7 +93,7 @@ Now you will wrap together the two security profiles you just created into a sin
 
 This profile contains a case statement that takes the `kernel` fact and determines what profiles to apply based on the operating system.
 
-Validate that the content of `site/profile/manifests/security_baseline.pp` as follows:
+Validate that the content of `control-repo/site/profile/manifests/security_baseline.pp` as follows:
 
 ```ruby
 class profile::security_baseline {
@@ -116,7 +116,7 @@ class profile::security_baseline {
 
 Since you want security on all workstations, it makes sense to add the `security_baseline` profile to `base.pp`. This ensures that every workstation gets the proper security configuration.
 
-1. Open `site/profile/manifests/base.pp`, and declare the `profile::security_baseline` class:
+1. Open `control-repo/site/profile/manifests/base.pp`, and declare the `profile::security_baseline` class:
 
     ```ruby
     class profile::base {
@@ -125,13 +125,13 @@ Since you want security on all workstations, it makes sense to add the `security
     }
     ```
 
-2. Save `base.pp`
+1. Save `base.pp`
 
 ### Add a smoke test (Optional)
 
 1. Add the example file to allow local `puppet apply` testing:
-    1. Create the `examples` directory in `~/control-repo/site/profile/`
-    1. Inside the `examples` folder, add a file called `security_baseline.pp`
+    1. Create the `examples` directory in `control-repo/site/profile/`
+    2. Inside the `examples` folder, add a file called `security_baseline.pp`
 
 1. Add this to the `security_baseline.pp` file:
 
@@ -142,11 +142,11 @@ Since you want security on all workstations, it makes sense to add the `security
 1. Save `security_baseline.pp`
 1. Test the new profile:
 
-    ```$ cd control-repo/site```
+    ```cd control-repo/site```
 
     **This is the smoke test.**
 
-    ```$ sudo puppet apply profile/examples/security_baseline.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos --noop```
+    ```sudo puppet apply profile/examples/security_baseline.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos --noop```
 
 **_It is safe to ignore the yellow *This method is deprecated* warnings for this lab._**
 

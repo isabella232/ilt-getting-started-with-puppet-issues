@@ -15,7 +15,7 @@ In this task, you will create the `time` module with a single `time` class. The 
 
 * Run this command:
 
-```$ pdk new module```
+```pdk new module```
 
 * You will see several questions requiring an answer. Enter these answers:
 
@@ -33,9 +33,9 @@ In this task, you will create the `time` module with a single `time` class. The 
 
 * Change the current working directory to the module you created, then use the `pdk` command to create a new class called `time`. The commands are the same for Windows and Linux:
 
-```$ cd time```
+```cd time```
 
-```$ pdk new class time```
+```pdk new class time```
 
 The output should show the names of files that the last command created:
 
@@ -48,9 +48,9 @@ pdk (INFO): Creating '/home/centos/time/spec/classes/time_spec.rb' from template
 
 1. Open the `init.pp` file using the vi editor:
 
-    ```$ vi manifests/init.pp```
+    ```vi manifests/init.pp```
 
-1. Replace the file’s content with the code below. To do this, press `i` to enter insert mode and copy the following content into the file:
+2. Replace the file’s content with the code below. To do this, press `i` to enter insert mode and copy the following content into the file:
 
     ```ruby
     class time {
@@ -71,7 +71,7 @@ pdk (INFO): Creating '/home/centos/time/spec/classes/time_spec.rb' from template
     }
     ```
 
-1. Save the file by pressing `Esc` and typing `:wq` and then `Enter`.
+3. Save the file by pressing `Esc` and typing `:wq` and then `Enter`.
 
 ### Track your module with version control
 
@@ -79,9 +79,9 @@ It’s important to add your module’s files to version control so you can trac
 
 1. Before you can use Git, you need to configure it. These steps are the same for Windows and Linux:
 
-    ```$ git config --global user.email "noreply@puppet.com"```
+    ```git config --global user.email "noreply@puppet.com"```
 
-    ```$ git config --global user.name "studentN"```
+    ```git config --global user.name "studentN"```
 
 2. Now commit the code of your newly created module and class, as described below.
 
@@ -110,25 +110,25 @@ It’s important to add your module’s files to version control so you can trac
 
 4. Run the following:
 
-    ```$ git init```
+    ```git init```
 
-    ```$ git add --all```
+    ```git add --all```
 
-    ```$ git commit -m "Initial Commit"```
+    ```git commit -m "Initial Commit"```
 
 ### Publish your module
 
 * To share your module with colleagues and Puppet masters, push it to a remote Git server. Running the following command from the base directory of your time module adds the URL to push to using the name `origin`. This command is the same on Windows and Linux.
 
-    ```$ git remote add origin git@gitlab.classroom.puppet.com:puppet/time.git```
+    ```git remote add origin git@gitlab.classroom.puppet.com:puppet/time.git```
 
 * To keep your module changes from affecting other users in the class, create a branch named after your student number. This command is the same on Windows and Linux.
 
-    ```$ git checkout -b studentN```
+    ```git checkout -b studentN```
 
 * Push the branch to the remote Git server with a single command:
 
-    ```$ git push origin studentN```
+    ```git push origin studentN```
 
 Whether you are on Windows or Linux, you can inspect the files you just committed by pointing a web browser to <https://classXXXX-gitlab.classroom.puppet.com/puppet/time/tree/studentN>
 

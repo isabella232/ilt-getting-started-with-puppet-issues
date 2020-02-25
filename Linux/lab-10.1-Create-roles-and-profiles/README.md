@@ -19,13 +19,13 @@ In this task, you will clone the control repository to your Windows or Linux wor
 
 Run these commands to clone the control repository:
 
-   ```$ cd ~```
+   ```cd ~```
 
-   ```$ git clone git@gitlab.classroom.puppet.com:puppet/control-repo.git```
+   ```git clone git@gitlab.classroom.puppet.com:puppet/control-repo.git```
 
-   ```$ cd control-repo```
+   ```cd control-repo```
 
-   ```$ git checkout studentN```
+   ```git checkout studentN```
 
 ### Create a base profile
 
@@ -46,19 +46,19 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
 
 1. Change directories to `control-repo/site/profile`
 
-    ```$ cd ~/control-repo/site/profile```
+    ```cd ~/control-repo/site/profile```
 
-1. Run the PDK convert command
+2. Run the PDK convert command
 
-    ```$ pdk convert --add-tests```
+    ```pdk convert --add-tests```
 
-1. Accept `Y` when asked `Do you want to continue and make these changes to your module?
+3. Accept `Y` when asked `Do you want to continue and make these changes to your module?
 
 ### Validate and test the syntax
 
 1. Test the syntax. From your shell window run:
 
-    ```$ pdk validate```
+    ```pdk validate```
 
 Now when you apply the `base` profile to all workstations, they will have NTP configured by default.
 
@@ -93,19 +93,19 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 
 1. Change directories to `control-repo/site/role`
 
-    ```$ cd ~/control-repo/site/role```
+    ```cd ~/control-repo/site/role```
 
-1. Run the PDK convert command
+2. Run the PDK convert command
 
-    ```$ pdk convert --add-tests```
+    ```pdk convert --add-tests```
 
-1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
+3. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
-1. Test the syntax by running:
+4. Test the syntax by running:
 
-    ```$ pdk validate```
+    ```pdk validate```
 
-1. If any syntax errors are detected, fix them and re-run the PDK Validate tool.
+5. If any syntax errors are detected, fix them and re-run the PDK Validate tool.
 
 ## Apply the `bastion` role to your workstation
 
@@ -138,20 +138,20 @@ Create an `examples` directory where you can place files to test your profile:
 
 1. Navigate to the right directory:
 
-    ```$ cd ~/control-repo/site/role```
+    ```cd ~/control-repo/site/role```
 
-1. Run a smoke test:
+2. Run a smoke test:
 
-    ```$ sudo puppet apply examples/bastion.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos  --noop```
+    ```sudo puppet apply examples/bastion.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos  --noop```
 
-1. Apply the role for real:
+3. Apply the role for real:
 
-    ```$ sudo puppet apply examples/bastion.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos```
+    ```sudo puppet apply examples/bastion.pp --modulepath=/etc/puppetlabs/code/environments/production/modules:/home/centos/control-repo/site:/home/centos```
 
-1. Verify Puppet actually changed your time server to `time.google.com` by running this command. Your output should be similar.
+4. Verify Puppet actually changed your time server to `time.google.com` by running this command. Your output should be similar.
 
-    ```$ grep server /etc/ntp.conf```
-    ```$ server time.google.com```
+    ```grep server /etc/ntp.conf```
+    ```server time.google.com```
 
 **_In the commands above, you might wonder what `modulepath` is. We need to supply this option so Puppet knows where to look for Puppet code._**
 
@@ -159,13 +159,13 @@ Create an `examples` directory where you can place files to test your profile:
 
 Run these commands:
 
-```$ cd control-repo```
+```cd control-repo```
 
-```$ git add .```
+```git add .```
 
-```$ git commit -m 'Adding Bastion Role and Base Profile'```
+```git commit -m 'Adding Bastion Role and Base Profile'```
 
-```$ git push origin studentN```
+```git push origin studentN```
 
 In the next lab, you will expand on the base profile.
 

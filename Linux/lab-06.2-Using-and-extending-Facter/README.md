@@ -20,7 +20,7 @@ Run the following commands on your Windows or Linux classroom agent node, not on
 Run Facter on an agent node to see a list of all facts it can determine about that node (your output will differ from this abridged sample output):
 
 ```plaintext
-$ facter
+facter
   aio_agent_version => 5.5.1
   augeas => {
     version => "1.10.1"
@@ -51,7 +51,7 @@ Notice in the previous sample output, the `is_virtual` fact is a simple string v
 View a single, structured fact about the agent node's `os` fact (your output will differ from this abridged sample output):
 
 ```plaintext
-$ facter os
+facter os
   {
     architecture => "x86_64",
     distro => {
@@ -80,7 +80,7 @@ Facter also gathers and displays facts that have simple string values.
 View a simple string fact about the agent node's `kernel` fact (your output will differ from this sample output if you are on Windows):
 
 ```plaintext
-$ facter kernel
+facter kernel
 Linux
 ```
 
@@ -96,34 +96,34 @@ Facter gathers built-in (core) facts that are packaged with Facter. It can also 
 
 First, check that the `datacenter` fact does not already exist. This command should produce no value:
 
-```$ facter datacenter```
+```facter datacenter```
 
 Next, move the provided external fact script into place:
 
 1. Download `datacenter.sh` to the Linux machine by visiting the downloads page with your browser, right-clicking the script, and selecting **Copy Link address**. Then run:
 
-    ```$ curl -o datacenter.sh '<pasted location>'```
+    ```curl -o datacenter.sh '<pasted location>'```
 
-1. Create the Facter location:
+2. Create the Facter location:
 
-    ```$ sudo mkdir -p /etc/puppetlabs/facter/facts.d```
+    ```sudo mkdir -p /etc/puppetlabs/facter/facts.d```
 
-1. Move the script into place where Facter can execute it:
+3. Move the script into place where Facter can execute it:
 
-    ```$ sudo mv datacenter.sh /etc/puppetlabs/facter/facts.d```
+    ```sudo mv datacenter.sh /etc/puppetlabs/facter/facts.d```
 
-1. Make the script executable:
+4. Make the script executable:
 
-     ```$ sudo chmod +x /etc/puppetlabs/facter/facts.d/datacenter.sh```
+     ```sudo chmod +x /etc/puppetlabs/facter/facts.d/datacenter.sh```
 
-1. View the shell script, which echoes a key/value pair and exits:
+5. View the shell script, which echoes a key/value pair and exits:
 
     ```vi /etc/puppetlabs/facter/facts.d/datacenter.sh```
 
 Finally, verify that the fact has been installed and is accessible by Facter. Notice the new output.
 
 ```plaintext
-$ sudo facter datacenter
+sudo facter datacenter
 pdx
 ```
 

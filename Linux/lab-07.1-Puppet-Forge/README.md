@@ -47,9 +47,9 @@ Some modules have **dependencies**, meaning they rely on code from another modul
 
 Copy and paste the module installation commands (shown on each module’s Forge page) into the command line on the node:
 
-```$ sudo puppet module install puppetlabs/stdlib --version 5.2.0```
+```sudo puppet module install puppetlabs/stdlib --version 5.2.0```
 
-```$ sudo puppet module install puppetlabs/ntp```
+```sudo puppet module install puppetlabs/ntp```
 
 ### Verify the installation
 
@@ -95,7 +95,7 @@ The instructor has already installed the modules to the Puppet master, and they 
 
 Trigger a Puppet run on your machine. Observe the output of the command showing the Puppet run and configuration of the time service on the node.
 
-```$ sudo puppet agent -t```
+```sudo puppet agent -t```
 
 Once the run completes, verify the time on the system and ensure that it is accurate. For further verification that the service is configured correctly, open the `/etc/ntp.conf` file to check the list of NTP servers.
 

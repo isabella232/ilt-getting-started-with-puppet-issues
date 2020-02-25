@@ -87,9 +87,9 @@ It’s important to add your module’s files to version control so you can trac
 
 Before you can use Git, you need to configure it. These steps are the same for Windows and Linux:
 
-```$ git config --global user.email "noreply@puppet.com"```
+```git config --global user.email "noreply@puppet.com"```
 
-```$ git config --global user.name "studentN"```
+```git config --global user.name "studentN"```
 
 #### Now commit the code of your newly created module and class, as described below
 
@@ -110,20 +110,20 @@ Before you can use Git, you need to configure it. These steps are the same for W
 
 * To share your module with colleagues and Puppet masters, push it to a remote Git server. Running the following command (inside the VSC Terminal) from the base directory of your time module add the URL to push to using the name `origin`.
 
-    ```PS C:\Users\Administrator\time> git remote add origin git@gitlab.classroom.puppet.com:puppet/time.git```
+    ```git remote add origin git@gitlab.classroom.puppet.com:puppet/time.git```
 
 * To keep your module changes from affecting other users in the class, create a branch named after your student number.
 * Still in the Terminal of VSCode
 
-    ```PS C:\Users\Administrator\time> git checkout -b studentN```
+    ```git checkout -b studentN```
 
 * Push the branch to the remote Git server:
 
 1. Open Visual Studio Code.
-1. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
-1. Click the ellipsis where the small diamond icon was in the upper left of the pane.
-1. Choose **Publish branch**.
-1. Choose **No** in the bottom right dialog about periodically running `git fetch`.
+2. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
+3. Click the ellipsis where the small diamond icon was in the upper left of the pane.
+4. Choose **Publish branch**.
+5. Choose **No** in the bottom right dialog about periodically running `git fetch`.
 
 Whether you are on Windows or Linux, you can inspect the files you just committed by pointing a web browser to <https://classXXXX-gitlab.classroom.puppet.com/puppet/time/tree/studentN>
 
@@ -141,11 +141,11 @@ Optionally, add the time module to the platform you did not use for the earlier 
 
 As the `centos` user on Linux run:
 
-```$ git clone git@gitlab.classroom.puppet.com:puppet/time.git```
+```git clone git@gitlab.classroom.puppet.com:puppet/time.git```
 
-```$ git fetch origin studentN```
+```git fetch origin studentN```
 
-```$ git checkout studentN```
+```git checkout studentN```
 
 ## Discussion questions
 

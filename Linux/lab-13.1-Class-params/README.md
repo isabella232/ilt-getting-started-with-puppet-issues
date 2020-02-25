@@ -41,13 +41,13 @@ What did you just do? For one, you deleted the static values used in a previous 
 
 #### Commit your code, and push it to a remote repo
 
-```$ cd time```
+```cd time```
 
-```$ git add .```
+```git add .```
 
-```$ git commit -m 'Added servers param to time class'```
+```git commit -m 'Added servers param to time class'```
 
-```$ git push origin studentN```
+```git push origin studentN```
 
 ## Update the code that configures the time servers
 

@@ -17,7 +17,7 @@ You are going to stop the time service on the Windows and Linux machines machine
 
 Use SSH to connect to the Linux machine you will run Bolt on. Once you are connected, open a shell terminal on that machine, and then run this command within the terminal:
 
-```$ bolt command run 'sudo systemctl stop ntpd' --targets ssh://localhost --user centos --no-host-key-check```
+```bolt command run 'sudo systemctl stop ntpd' --targets ssh://localhost --user centos --no-host-key-check```
 
 **_The required SSH key setup has been built into the student Linux machine, so you do not need to supply a password._**
 
@@ -46,7 +46,7 @@ Now you will start the time service on a remote machine, which is a bit more int
 
 On your Linux machine, run the following in a terminal window:
 
-```$ bolt command run 'net start w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt command run 'net start w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
 
 **_You will be prompted for a password._**
 
@@ -62,7 +62,7 @@ STDOUT:
 
 On your Linux machine, run the following in a terminal window:
 
-```$ bolt command run 'Get-Service w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt command run 'Get-Service w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
 
 **_You will be prompted for a password._**
 
@@ -94,7 +94,7 @@ In this exercise you will run a script against your remote host. Regardless of p
 
 On your Linux machine, run the following in a terminal window:
 
-```$ bolt script run /tools/windows.ps1 --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt script run /tools/windows.ps1 --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
 
 The output will look similar to the following:
 

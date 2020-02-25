@@ -24,7 +24,7 @@ The labs completed thus far have primarily been focused on operating system conf
     }
     ```
 
-1. Create the supporting `profile::sample_app` profile by navigating to `site/profile/manifests` within the control repo and creating a file called `sample_app.pp`
+1. Create the supporting `profile::sample_app` profile by navigating to `control-repo/site/profile/manifests` within the control repo and creating a file called `sample_app.pp`
 1. Enter the following contents into the new file:
   
     ```ruby
@@ -47,10 +47,10 @@ The labs completed thus far have primarily been focused on operating system conf
 
 ### Create the operating system-specific profiles
 
-1. Within the `site/profile/manifests` folder, create a new folder called `sample_app`
+1. Within the `control-repo/site/profile/manifests` folder, create a new folder called `sample_app`
 1. The contents of the Linux and Windows manifests can be found in the **Downloads** page on the presentation for this module. Download `lab14_linux.pp` and `lab14_windows.pp` to your student machine.
-1. Copy `lab14_linux.pp` to the `site/profile/manifests/sample_app` folder in your control repo, and rename the file to `linux.pp`
-1. Copy `lab14_windows.pp` to the `site/profile/manifests/sample_app` folder in your control repo, and rename the file to `windows.pp`
+1. Copy `lab14_linux.pp` to the `control-repo/site/profile/manifests/sample_app` folder in your control repo, and rename the file to `linux.pp`
+1. Copy `lab14_windows.pp` to the `control-repo/site/profile/manifests/sample_app` folder in your control repo, and rename the file to `windows.pp`
 1. Copy your application JAR file into place, using the instructions that follow.
     1. Create a new folder called `files` inside of the `site/profile` directory. The JAR will live here.
     1. Normally, application artifacts such as JARs would be served from an artifact repository, HTTP server, or similar file share and not from a module. But to keep things simple for this lab, download the JAR from the **Downloads** page on the presentation for this module (the file is called `puppet_webapp.jar`).

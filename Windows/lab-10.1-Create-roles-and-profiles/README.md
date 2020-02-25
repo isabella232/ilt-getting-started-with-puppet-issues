@@ -47,19 +47,19 @@ Time is a perfect module to add to the `base` profile: that is, a profile that s
 
 1. Change directories to `C:\Users\Administrator\control-repo\site\profile`
 
-    ```C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site\profile```
+    ```cd C:\Users\Administrator\control-repo\site\profile```
 
-1. Run the PDK convert command
+2. Run the PDK convert command
 
-    ```C:\Users\Administrator\control-repo\site\profile> pdk convert --add-tests```
+    ```pdk convert --add-tests```
 
-1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
+3. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
 ### Validate and test the syntax
 
 1. Test the syntax. From your shell window run:
 
-    ```PS C:\Users\Administrator\control-repo\site\profile> pdk validate```
+    ```pdk validate```
 
 Now when you apply the `base` profile to all workstations, they will have NTP configured by default.
 
@@ -84,17 +84,17 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 
 1. Change directories to `C:\Users\Administrator\control-repo\site\role`
 
-    ```C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site\role```
+    ```cd C:\Users\Administrator\control-repo\site\role```
 
-1. Run the PDK convert command
+2. Run the PDK convert command
 
-    ```C:\Users\Administrator\control-repo\site\role> pdk convert --add-tests```
+    ```pdk convert --add-tests```
 
-1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
+3. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
-1. Navigate to the `C:Users/Administrators/control-repo/site/role/manifests` directory.
-1. Create a new file called `bastion.pp`.
-1. To configure the `bastion` role, enter the following code into the empty `bastion.pp` file:
+4. Navigate to the `C:Users/Administrators/control-repo/site/role/manifests` directory.
+5. Create a new file called `bastion.pp`.
+6. To configure the `bastion` role, enter the following code into the empty `bastion.pp` file:
 
     ```ruby
     class role::bastion {
@@ -102,11 +102,11 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
     }
     ```
 
-1. Test the syntax by running:
+7. Test the syntax by running:
 
-    ```PS C:\Users\Administrator\control-repo\site\role> pdk validate```
+    ```pdk validate```
 
-1. If any syntax errors are detected, fix them and re-run the PDK Validate tool.
+8. If any syntax errors are detected, fix them and re-run the PDK Validate tool.
 
 ## Apply the `bastion` role to your workstation
 

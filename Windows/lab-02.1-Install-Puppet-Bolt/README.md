@@ -29,7 +29,7 @@ Connect with the following information:
 
 On the target machine, start a PowerShell session and run:
 
-```PS C:\Users\Administrator> choco install puppet-bolt```
+```choco install puppet-bolt```
 
 #### Validate the installation
 
@@ -44,15 +44,15 @@ Note that your version might be slightly different.
 
 Open a new PowerShell window and run:
 
-```PS C:\Users\Administrator> bolt --version```
+```bolt --version```
 
 #### Run Bolt
 
-```PS C:\Users\Administrator> bolt help```
+```bolt help```
 
 or simply:
 
-```PS C:\Users\Administrator> bolt```
+```bolt```
 
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
 

@@ -42,18 +42,18 @@ In this lab you will install Bolt using the built-in package manager of the Linu
 1. On your Windows student machine, open a PowerShell window
 1. Install openssh using chocolatey:
 
-   ```PS C:\Users\Administrator> choco install openssh```
+   ```choco install openssh```
 
 1. When the install is done, restart PowerShell. You can then use the credentials already on the host.
 1. Re-open PowerShell and run:
 
-   ```PS C:\Users\Administrator> ssh centos@<your-linux-machine>.classroom.puppet.com```
+   ```ssh centos@<your-linux-machine>.classroom.puppet.com```
 
 #### Install the Bolt package from a repository
 
 On the Linux machine, add the required YUM repository and install the Bolt package:
 
-```$ sudo yum install -y puppet-bolt```
+```sudo yum install -y puppet-bolt```
 
 #### Validate the installation
 
@@ -66,11 +66,11 @@ $ bolt --version
 
 #### Run Bolt
 
-```$ bolt help```
+```bolt help```
 
 or simply:
 
-```$ bolt```
+```bolt```
 
 This provides a page of helpful information for running Bolt. We will come back to Bolt after setting up the rest of the lab.
 

@@ -40,11 +40,11 @@ A basic installation script has been pre-staged in your home directory, at `~/in
 
 1. Install the agent on your local system by using Bolt to run the script in a terminal:
 
-    ```$ bolt script run install_pe_agent.sh --targets localhost```
+    ```bolt script run install_pe_agent.sh --targets localhost```
 
-1. Verify that the agent installed correctly by running this command. If the output displays a version, the installation was successful.
+2. Verify that the agent installed correctly by running this command. If the output displays a version, the installation was successful.
 
-    ```$ puppet --version```
+    ```puppet --version```
 
 **Pause here and run the [Windows](../../Windows/lab-05.1-Puppet-Agent-deployment) Exercise before continuing.**
 
@@ -63,7 +63,7 @@ Now that your agent has been installed, you have to sign the certificates so tha
 
 * On Linux, open a terminal and run:
 
-    ```$ sudo puppet agent -t```
+    ```sudo puppet agent -t```
 
 * After a few seconds of runtime you will see a notice like this:
 
