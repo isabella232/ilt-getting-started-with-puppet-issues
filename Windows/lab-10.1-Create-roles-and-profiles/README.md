@@ -92,8 +92,8 @@ For this example, you will ensure all bastion hosts have the `base` profile appl
 
 1. Accept `Y` when asked `Do you want to continue and make these changes to your module?`
 
-1. Create a new file called `bastion.pp` in the `manifests` directory.
-
+1. Navigate to the `C:Users/Administrators/control-repo/site/role/manifests` directory.
+1. Create a new file called `bastion.pp`.
 1. To configure the `bastion` role, enter the following code into the empty `bastion.pp` file:
 
     ```ruby
@@ -146,7 +146,7 @@ Create an `examples` directory where you can place files to test your profile:
     PS C:\Users\Administrator> cd c:\Users\Administrator\control-repo\site\role
 
     # This is the smoke test. --noop is a dry-run.
-    PS C:\Users\Administrator> puppet apply examples\bastion.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator --noop'
+    PS C:\Users\Administrator> puppet apply examples\bastion.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator' --noop
 
     # Apply it for real
     PS C:\Users\Administrator> puppet apply examples\bastion.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/Users/Administrator/control-repo/site;C:/Users/Administrator'

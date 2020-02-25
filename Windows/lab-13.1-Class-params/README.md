@@ -22,7 +22,7 @@ To complete this lab, you will need either a Windows host machine using Visual S
 
 ### Update the time module
 
-In this step you will make a slight change to the existing code in your `time` profile.
+In this step you will make a slight change to the existing code in your `time` module, specifically the `time/manifests/init.pp` file.
 
 Connect to your Windows student machine and open Visual Studio Code with your cloned time repo. Or if you are on Linux, open the appropriate file with an editor.
 
@@ -31,7 +31,6 @@ Change the code from this:
 ```ruby
 class time {
   $servers = ['time.google.com']
-...
 ```
 
 To this:
@@ -40,7 +39,6 @@ To this:
 class time (
   Optional[Array[String]] $servers = undef,
 ) {
-...
 ```
 
 What did you just do? For one, you deleted the static values used in a previous version of this class: `$servers = ['time.google.com']`. Also, you updated the class to use a class parameter (line 2 of the new version). Line 2 defines the `$servers` parameter, which is undefined by default. This means that if no value is passed for this parameter, the default time servers in class `winntp` and `ntp` will be used.

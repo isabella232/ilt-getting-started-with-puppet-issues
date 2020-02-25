@@ -3,7 +3,6 @@
 In this lab you will learn how to create a role and profile structure for deploying a Java app.
 
 * Set up the required directory structure.
-* Install Java.
 * Copy the application JAR into place.
 * Configure the JAR to run as a system service.
 * Work for both Windows and Linux.
