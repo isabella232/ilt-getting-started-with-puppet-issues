@@ -93,16 +93,14 @@ Before you can use Git, you need to configure it. These steps are the same for W
 
 #### Now commit the code of your newly created module and class, as described below
 
-1. Open Visual Studio Code.
 1. Choose **File > Open Folder**
 1. Change directories back up into the main `time` directory and click **Select Folder** to open it.
 1. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
-1. Click the + icon in the upper right of the left pane (its tool tip says **Initialize Repository**).
-1. Press *Enter* to accept the default or click the `time c:\Users\Administrator\time`.
-1. Click the ellipsis where the + icon was in the upper right of the pane.
-1. Choose **Stage All Changes**.
-1. Using the ellipsis choose **Commit Staged**.
-1. Enter `Initial Commit` into the commit message dialog and press `Enter`.
+1. Click the **Initialize Repository** button.
+1. Press *Enter* to accept the default location of `C:\Users\Administrator\time`.
+1. Select the ellipsis to the right of **SOURCE CONTROL: GIT** and click **Stage All Changes**.
+1. Select the ellipsis again and click **Commit Staged**.
+1. Enter your commit message and press `Enter`.
 
 **Changes** should now be displayed as **(0)**.
 
@@ -119,11 +117,7 @@ Before you can use Git, you need to configure it. These steps are the same for W
 
 * Push the branch to the remote Git server:
 
-1. Open Visual Studio Code.
-2. Click the Source Control icon on the left of the window (third down, below the magnifying glass icon).
-3. Click the ellipsis where the small diamond icon was in the upper left of the pane.
-4. Choose **Publish branch**.
-5. Choose **No** in the bottom right dialog about periodically running `git fetch`.
+1. Select the ellipsis to the right of **SOURCE CONTROL: GIT** and click **Push**
 
 Whether you are on Windows or Linux, you can inspect the files you just committed by pointing a web browser to <https://classXXXX-gitlab.classroom.puppet.com/puppet/time/tree/studentN>
 
