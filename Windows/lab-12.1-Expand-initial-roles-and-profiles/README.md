@@ -137,9 +137,7 @@ Since you want security on all workstations, it makes sense to add the `security
     PS C:\Users\Administrator> cd C:\Users\Administrator\control-repo\site
 
     # This is the smoke test.
-    PS C:\Users\Administrator> puppet apply profile\examples\security_baseline.pp `
-      --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;`
-      C:/ProgramData/PuppetLabs/code/modules;.' --noop
+    PS C:\Users\Administrator> puppet apply profile\examples\security_baseline.pp --modulepath='C:/ProgramData/PuppetLabs/code/environments/production/modules;C:/ProgramData/PuppetLabs/code/modules;.' --noop
     ```
 
 **_It is safe to ignore the yellow *This method is deprecated* warnings for this lab._**

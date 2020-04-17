@@ -46,10 +46,10 @@ What did you just do? For one, you deleted the static values used in a previous 
 ### Commit your code, and push it to a remote repo
 
 1. In Visual Studio Code, click the Source Control (fork) icon on the left.
-1. Select the checkbox next to **SOURCE CONTROL: GIT** (and click **yes** if prompted).
+1. Select the ellipsis to the right of **SOURCE CONTROL: GIT** and click **Stage All Changes**.
+1. Select the ellipsis again and click **Commit Staged**.
 1. Enter your commit message and press `Enter`.
-1. Click the ellipsis to the right of **SOURCE CONTROL: GIT** and click **Push**.
-1. Ask the instructor to deploy code for your environment.
+1. Click the ellipsis again and click **Push**.
 
 ## Update the code that configures the time servers
 

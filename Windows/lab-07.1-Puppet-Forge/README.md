@@ -49,6 +49,7 @@ Copy and paste the module installation commands (shown on each module’s Forge 
 
 ```plaintext
 PS C:\Users\Administrator> puppet module install puppetlabs/stdlib --version 5.2.0
+PS C:\Users\Administrator> puppet module install puppetlabs/registry --version 2.1.0
 PS C:\Users\Administrator> puppet module install tse/winntp --version 1.0.1
 ```
 
