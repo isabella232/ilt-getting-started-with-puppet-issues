@@ -46,7 +46,7 @@ Now you will start the time service on a remote machine, which is a bit more int
 
 On your Linux machine, run the following in a terminal window:
 
-```bolt command run 'net start w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt command run 'net start w32time' --user Administrator --no-ssl --password-prompt --targets winrm://<your-windows-machine>.classroom.puppet.com```
 
 **_You will be prompted for a password._**
 
@@ -62,7 +62,7 @@ STDOUT:
 
 On your Linux machine, run the following in a terminal window:
 
-```bolt command run 'Get-Service w32time' --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt command run 'Get-Service w32time' --user Administrator --no-ssl --password-prompt --targets winrm://<your-windows-machine>.classroom.puppet.com```
 
 **_You will be prompted for a password._**
 
@@ -94,7 +94,7 @@ In this exercise you will run a script against your remote host. Regardless of p
 
 On your Linux machine, run the following in a terminal window:
 
-```bolt script run /tools/windows.ps1 --targets winrm://<your-windows-machine>.classroom.puppet.com --user Administrator --no-ssl --password-prompt```
+```bolt script run /tools/windows.ps1 --user Administrator --no-ssl --password-prompt --targets winrm://<your-windows-machine>.classroom.puppet.com```
 
 The output will look similar to the following:
 
