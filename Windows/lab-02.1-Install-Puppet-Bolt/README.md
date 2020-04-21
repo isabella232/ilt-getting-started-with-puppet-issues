@@ -39,7 +39,7 @@ Note that your version might be slightly different.
 
 ```plaintext
    PS C:\Users\Administrator> bolt --version
-   1.39.0
+   2.6.0
 ```
 
 Open a new PowerShell window and run:

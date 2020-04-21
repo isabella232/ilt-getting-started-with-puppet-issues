@@ -50,7 +50,7 @@ Now you will start the time service on a remote machine, which is a bit more int
 
 On your Windows machine, run the following in a PowerShell window:
 
-```bolt command run 'sudo systemctl start ntpd' --targets ssh://<your-linux-machine>.classroom.puppet.com --private-key C:\keys\private_key.pem --user centos --no-host-key-check```
+```bolt command run 'sudo systemctl start ntpd' --private-key C:\keys\private_key.pem --user centos --no-host-key-check --targets ssh://<your-linux-machine>.classroom.puppet.com ```
 
 **_This runs a command on just one remote host. Instead, you could have supplied a list of hosts to run simultaneously - or even an entire inventory file of hosts._**
 
@@ -67,7 +67,7 @@ The output will look similar to the following:
 
 Run the following in a PowerShell window:
 
-```bolt command run 'sudo systemctl status ntpd' --targets ssh://<your-linux-machine>.classroom.puppet.com --private-key C:\keys\private_key.pem --user centos --no-host-key-check```
+```bolt command run 'sudo systemctl status ntpd' --private-key C:\keys\private_key.pem --user centos --no-host-key-check --targets ssh://<your-linux-machine>.classroom.puppet.com```
 
 The output will look similar to the following:
 
@@ -101,7 +101,7 @@ In this exercise you will run a script against your remote host. Regardless of p
 
 On your Windows machine, run the following in a PowerShell window:
 
-```bolt script run C:\tools\linux.sh --targets ssh://<your-linux-machine>.classroom.puppet.com --private-key C:\keys\private_key.pem --user centos --no-host-key-check --run-as root```
+```bolt script run C:\tools\linux.sh --private-key C:\keys\private_key.pem --user centos --no-host-key-check --run-as root --targets ssh://<your-linux-machine>.classroom.puppet.com```
 
 **_Notice the use of `--run-as`. This allows us to handle permission escalations. In this case you are authenticating as `centos` and then changing the user to `root` (via sudo) when the script executes. Your user has no password access to run `sudo`, but if you have a separate `sudo` password you need to supply you can do that as well. See the output of `bolt -h` for details._**
 

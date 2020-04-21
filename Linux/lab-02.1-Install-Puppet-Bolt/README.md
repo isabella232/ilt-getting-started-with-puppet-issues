@@ -61,7 +61,7 @@ Note that your version might be slightly different.
 
 ```plaintext
 $ bolt --version
-1.39.0
+2.6.0
 ```
 
 #### Run Bolt
