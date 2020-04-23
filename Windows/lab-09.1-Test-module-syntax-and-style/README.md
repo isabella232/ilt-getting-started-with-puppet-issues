@@ -21,15 +21,23 @@ In this lab you will learn how to:
 The output should be similar to this:
 
 ```plaintext
-PS C:\Users\Administrator\time> pdk validate
+PS C:\Users\Administrator\time\manifests> pdk validate
+pdk (INFO): Using Ruby 2.5.7
+pdk (INFO): Using Puppet 6.13.0
 pdk (INFO): Running all available validators...
-pdk (INFO): Using Ruby 2.4.4
-pdk (INFO): Using Puppet 5.5.2
-[✔] Checking metadata syntax (metadata.json tasks/*.json).
-[✔] Checking module metadata style (metadata.json).
-[✔] Checking Puppet manifest syntax (**/**.pp).
-[✔] Checking Puppet manifest style (**/*.pp).
-[✔] Checking Ruby code style (**/**.rb).
++ [X] Running metadata validators ...
+|-- [X] Checking metadata syntax (metadata.json tasks/*.json).
+|__ [X] Checking module metadata style (metadata.json).
++ [*] Running puppet validators ...
+|-- [*] Checking Puppet manifest syntax (**/*.pp).
+|__ [*] Checking Puppet manifest style (**/*.pp).
++ [*] Running ruby validators ...
+|__ [*] Checking Ruby code style (**/**.rb).
++ [*] Running tasks validators ...
+|-- [*] Checking task names (tasks/**/*).
+|__ [*] Checking task metadata style (tasks/*.json).
++ [*] Running yaml validators ...
+|__ [*] Checking YAML syntax (**/*.yaml **/*.yml).
 ```
 
 **_If the output of your PDK Validate does not appear close to the above, review the error and attempt to fix it using the steps in the next task._**

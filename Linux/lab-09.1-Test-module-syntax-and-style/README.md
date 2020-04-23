@@ -18,8 +18,8 @@ The output should be similar to this:
 ```plaintext
 $ pdk validate
 pdk (INFO): Running all available validators...
-pdk (INFO): Using Ruby 2.4.4
-pdk (INFO): Using Puppet 5.5.2
+pdk (INFO): Using Ruby 2.5.7
+pdk (INFO): Using Puppet 6.10.1
 [✔] Checking metadata syntax (metadata.json tasks/*.json).
 [✔] Checking module metadata style (metadata.json).
 [✔] Checking Puppet manifest syntax (**/**.pp).
@@ -44,8 +44,8 @@ The output should be similar to this:
 ```plaintext
 $ pdk validate
 pdk (INFO): Running all available validators...
-pdk (INFO): Using Ruby 2.4.4
-pdk (INFO): Using Puppet 5.5.2
+pdk (INFO): Using Ruby 2.5.7
+pdk (INFO): Using Puppet 6.10.1
 [✔] Checking metadata syntax (metadata.json tasks/*.json).
 [✖] Checking module metadata style (metadata.json).
 [✖] Checking Puppet manifest syntax (**/**.pp).
