@@ -1,4 +1,4 @@
-# Getting Started with Puppet
+# Getting Started with Puppet Issues
 
 The use of this repo is for Issue tracking for the Gitbooks.
 
