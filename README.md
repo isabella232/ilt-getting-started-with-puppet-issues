@@ -1,6 +1,6 @@
 # Getting Started with Puppet
 
-This repository has been archived! The use of this repo is for Issue tracking for the Gitbooks.
+The use of this repo is for Issue tracking for the Gitbooks.
 
 If you need to report an Issue please use the Issues link and choose the appropriate New Issue, Bug Report / Docs Change / Featuer Request / Report a security vulnerability
 
